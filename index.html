@@ -3,96 +3,351 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>برق سفیر شرق | خدمات فنی و برق</title>
-  <meta name="description" content="شرکت خدمات فنی برق سفیر شرق؛ اجرای پروژه‌های برق و سیستم‌های حفاظتی.">
+  <meta name="description" content="برق سفیر شرق؛ خدمات فنی و مهندسی برق، اجرای پروژه‌های برق و سیستم‌های حفاظتی.">
+  <meta name="theme-color" content="#102747">
+  <title>برق سفیر شرق | خدمات فنی و مهندسی برق</title>
+
   <style>
+    :root {
+      --navy: #102747;
+      --blue: #1c4775;
+      --gold: #e2c77b;
+      --ink: #172033;
+      --muted: #5c687a;
+      --paper: #f4f6fa;
+      --white: #ffffff;
+      --line: #e0e5ed;
+    }
+
     * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
     body {
       margin: 0;
       font-family: Tahoma, Arial, sans-serif;
       line-height: 1.9;
-      color: #172033;
-      background: #f4f6fa;
+      color: var(--ink);
+      background: var(--paper);
     }
-    header {
-      background: #102747;
-      color: white;
-      padding: 22px 7%;
+
+    a { color: inherit; }
+
+    .container {
+      width: min(1120px, 90%);
+      margin: 0 auto;
     }
-    header h1 { margin: 0; font-size: 1.6rem; }
-    header p { margin: 4px 0 0; color: #e2c77b; }
+
+    .topbar {
+      background: var(--navy);
+      color: var(--white);
+      border-bottom: 3px solid var(--gold);
+    }
+
+    .topbar-inner {
+      min-height: 86px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      text-decoration: none;
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+
+    .brand small {
+      display: block;
+      color: var(--gold);
+      font-size: .82rem;
+      font-weight: normal;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-size: .92rem;
+    }
+
+    nav a:hover { color: var(--gold); }
+
     .hero {
-      padding: 70px 7%;
-      background: linear-gradient(135deg, #102747, #1c4775);
-      color: white;
+      padding: 78px 0;
+      color: var(--white);
+      background: linear-gradient(125deg, var(--navy), var(--blue));
     }
-    .hero h2 { font-size: 2rem; margin: 0 0 12px; }
-    .hero p { max-width: 650px; }
+
+    .hero-content { max-width: 760px; }
+
+    .eyebrow {
+      color: var(--gold);
+      font-weight: bold;
+      margin: 0 0 12px;
+    }
+
+    h1, h2, h3 { line-height: 1.5; }
+
+    .hero h1 {
+      margin: 0 0 18px;
+      font-size: clamp(2rem, 5vw, 3.25rem);
+    }
+
+    .hero p {
+      max-width: 680px;
+      margin: 0;
+      color: #edf2f8;
+      font-size: 1.05rem;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
     .button {
       display: inline-block;
-      margin-top: 14px;
-      padding: 10px 22px;
+      padding: 11px 22px;
+      border: 1px solid var(--gold);
       border-radius: 8px;
-      background: #e2c77b;
-      color: #102747;
+      background: var(--gold);
+      color: var(--navy);
       text-decoration: none;
       font-weight: bold;
     }
-    main { padding: 35px 7%; }
+
+    .button.secondary {
+      background: transparent;
+      color: var(--white);
+    }
+
+    section { scroll-margin-top: 20px; }
+
+    .section { padding: 58px 0; }
+
+    .section-heading {
+      max-width: 720px;
+      margin-bottom: 28px;
+    }
+
+    .section-heading h2 {
+      margin: 0 0 10px;
+      color: var(--navy);
+      font-size: 1.8rem;
+    }
+
+    .section-heading p {
+      margin: 0;
+      color: var(--muted);
+    }
+
     .cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 18px;
     }
-    article {
-      background: white;
-      padding: 22px;
-      border-radius: 12px;
-      border: 1px solid #e0e5ed;
+
+    .card {
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--white);
     }
-    article h3 { color: #102747; margin-top: 0; }
+
+    .card h3 {
+      margin: 0 0 10px;
+      color: var(--navy);
+      font-size: 1.15rem;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .about {
+      background: var(--white);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .about-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 35px;
+      align-items: start;
+    }
+
+    .about h2 {
+      margin-top: 0;
+      color: var(--navy);
+    }
+
+    .about p { color: var(--muted); }
+
+    .contact-panel {
+      padding: 30px;
+      border-radius: 16px;
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    .contact-panel h2 { margin-top: 0; }
+
+    .contact-panel p { color: #edf2f8; }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .contact-links a {
+      display: inline-block;
+      padding: 10px 16px;
+      border-radius: 8px;
+      background: var(--gold);
+      color: var(--navy);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
     footer {
-      padding: 25px 7%;
-      background: #102747;
-      color: white;
+      padding: 22px 0;
+      background: #0b1c32;
+      color: #dce4ee;
+      font-size: .9rem;
     }
-    footer a { color: #e2c77b; }
+
+    footer .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    @media (max-width: 760px) {
+      .topbar-inner {
+        padding: 16px 0;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav { gap: 10px 16px; }
+
+      .hero { padding: 56px 0; }
+
+      .cards { grid-template-columns: 1fr; }
+
+      .about-box { grid-template-columns: 1fr; }
+
+      .section { padding: 42px 0; }
+    }
   </style>
 </head>
+
 <body>
-  <header>
-    <h1>برق سفیر شرق</h1>
-    <p>خدمات فنی و مهندسی برق</p>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#home">
+        برق سفیر شرق
+        <small>خدمات فنی و مهندسی برق</small>
+      </a>
+
+      <nav aria-label="منوی اصلی">
+        <a href="#services">خدمات</a>
+        <a href="#about">درباره شرکت</a>
+        <a href="#contact">ارتباط با ما</a>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero">
-    <h2>به وب‌سایت برق سفیر شرق خوش آمدید</h2>
-    <p>ارائه خدمات فنی برق، اجرای پروژه‌های برق و سیستم‌های حفاظتی با رویکردی دقیق و حرفه‌ای.</p>
-    <a class="button" href="#contact">ارتباط با شرکت</a>
-  </section>
-
   <main>
-    <h2>خدمات ما</h2>
-    <div class="cards">
-      <article>
-        <h3>خدمات برق</h3>
-        <p>اجرای پروژه‌ها و خدمات فنی مرتبط با برق ساختمان و تأسیسات.</p>
-      </article>
-      <article>
-        <h3>سیستم‌های حفاظتی</h3>
-        <p>مشاوره و اجرای راهکارهای حفاظتی و نظارتی متناسب با نیاز پروژه.</p>
-      </article>
-      <article>
-        <h3>عیب‌یابی و تعمیرات</h3>
-        <p>بررسی و رفع ایرادهای فنی در تجهیزات و سامانه‌های برقی.</p>
-      </article>
-    </div>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <p class="eyebrow">برق سفیر شرق</p>
+          <h1>راهکارهای فنی برق، با نگاه دقیق و حرفه‌ای</h1>
+          <p>
+            ارائه خدمات فنی برق، اجرای پروژه‌های برق و سیستم‌های حفاظتی
+            برای ساختمان‌ها و تأسیسات.
+          </p>
+          <div class="actions">
+            <a class="button" href="#contact">درخواست خدمات</a>
+            <a class="button secondary" href="#services">آشنایی با خدمات</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <h2>خدمات ما</h2>
+          <p>خدمات فنی و اجرایی برق و سیستم‌های حفاظتی، متناسب با نیاز هر پروژه.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <h3>خدمات برق</h3>
+            <p>اجرای پروژه‌ها و خدمات فنی مرتبط با برق ساختمان و تأسیسات.</p>
+          </article>
+
+          <article class="card">
+            <h3>سیستم‌های حفاظتی و نظارتی</h3>
+            <p>مشاوره و اجرای راهکارهای حفاظتی و نظارتی، از جمله سیستم‌های دوربین مداربسته.</p>
+          </article>
+
+          <article class="card">
+            <h3>عیب‌یابی و تعمیرات</h3>
+            <p>بررسی و رفع ایرادهای فنی در تجهیزات و سامانه‌های برقی.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container about-box">
+        <div>
+          <h2>درباره برق سفیر شرق</h2>
+          <p>
+            برق سفیر شرق، شرکت خدمات فنی و مهندسی برق است که در زمینه
+            اجرای پروژه‌های برق و سیستم‌های حفاظتی فعالیت می‌کند.
+          </p>
+          <p>
+            برای بررسی نیاز پروژه و هماهنگی خدمات، از راه‌های ارتباطی
+            درج‌شده در این صفحه با شرکت تماس بگیرید.
+          </p>
+        </div>
+
+        <div class="contact-panel" id="contact">
+          <h2>ارتباط با شرکت</h2>
+          <p>برای پیگیری درخواست خدمات یا هماهنگی، با ما در تماس باشید.</p>
+          <div class="contact-links">
+            <a href="tel:09902774434">تماس: 09902774434</a>
+            <a href="https://t.me/barghe_safir_shargh" target="_blank" rel="noopener noreferrer">تلگرام شرکت</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer id="contact">
-    <h2>ارتباط با برق سفیر شرق</h2>
-    <p>تلفن: <a href="tel:09902774434">09902774434</a></p>
-    <p>تلگرام: <a href="https://t.me/barghe_safir_shargh">ارتباط در تلگرام</a></p>
+  <footer>
+    <div class="container">
+      <span>برق سفیر شرق | خدمات فنی و مهندسی برق</span>
+      <span>تمام حقوق محفوظ است.</span>
+    </div>
   </footer>
 </body>
-</html>
+  </html>
