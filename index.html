@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="fa" dir="rtl">
 <head>
@@ -6,670 +7,791 @@
 <meta name="description" content="برق سفیر شرق؛ خدمات فنی و مهندسی برق، اجرای پروژه‌های ساختمانی و صنعتی، تابلو برق و سیستم‌های حفاظتی.">
 <meta name="theme-color" content="#071827">
 <title>برق سفیر شرق | خدمات فنی و مهندسی برق</title>
+
 <style>
-:root{--navy:#071827;--navy2:#0d2b43;--blue:#0877b9;--cyan:#19b7c9;--gold:#f3b544;--ink:#152638;--muted:#607487;--paper:#f2f6fa;--line:#dce6ee;--white:#fff;--green:#14856b;--font-size:16px}
+:root{
+  --navy:#071827;--navy2:#0d2b43;--blue:#0877b9;
+  --cyan:#19b7c9;--gold:#f3b544;--ink:#152638;
+  --muted:#607487;--paper:#f2f6fa;--line:#dce6ee;
+  --white:#fff;--green:#14856b;--danger:#a52d35;
+  --font-size:16px
+}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:90px}
-body{margin:0;font-family:Tahoma,Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:2;font-size:var(--font-size)}
-a{color:inherit}button,input,select,textarea{font:inherit}
-.topline{background:#04111d;color:#d9e8f3;padding:7px 5%;font-size:12px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+html{scroll-behavior:smooth;scroll-padding-top:100px}
+body{
+  margin:0;font-family:Tahoma,Arial,sans-serif;
+  background:var(--paper);color:var(--ink);
+  line-height:2;font-size:var(--font-size)
+}
+a{color:inherit}
+button,input,select,textarea{font:inherit}
+button{cursor:pointer}
+.topline{
+  background:#04111d;color:#d9e8f3;padding:7px 5%;
+  font-size:12px;display:flex;justify-content:space-between;
+  gap:12px;flex-wrap:wrap
+}
 .topline a{color:#fff;text-decoration:none}
-header{position:sticky;top:0;z-index:20;background:#081d2eef;color:#fff;padding:12px 5%;display:flex;align-items:center;justify-content:space-between;gap:20px;box-shadow:0 6px 22px #0002;backdrop-filter:blur(12px)}
-.brand{display:flex;align-items:center;gap:12px}.logo{width:45px;height:45px;border:2px solid var(--gold);border-radius:12px;display:grid;place-items:center;color:var(--gold);font-size:25px;font-weight:bold}
-.brand h1{font-size:19px;margin:0;line-height:1.5}.brand small{display:block;color:#a9c1d2;font-size:10px;font-weight:normal}
-nav{display:flex;gap:18px;align-items:center;flex-wrap:wrap}nav a{text-decoration:none;color:#e5f0f7;font-size:13px}nav a:hover{color:var(--gold)}
-.nav-cta{background:var(--gold);color:#152638!important;padding:7px 13px;border-radius:8px;font-weight:bold}
-.toolbar{display:flex;gap:6px;align-items:center}.toolbtn{border:1px solid #ffffff50;background:#ffffff12;color:white;border-radius:8px;padding:5px 9px;cursor:pointer}
-.hero{position:relative;overflow:hidden;background:radial-gradient(circle at 15% 20%,#12618a 0,transparent 35%),linear-gradient(115deg,#061522,#0b2b45 60%,#104e70);color:#fff;padding:76px 6% 65px}
-.hero:after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,transparent 0 34px,#ffffff08 35px 36px);pointer-events:none}
-.hero-inner{position:relative;z-index:1;max-width:1180px;margin:auto;display:grid;grid-template-columns:1.5fr .8fr;gap:35px;align-items:center}
-.eyebrow{color:var(--gold);font-size:13px;font-weight:bold;letter-spacing:.3px}.hero h2{font-size:clamp(29px,4vw,48px);line-height:1.55;margin:10px 0 15px}
-.hero p{color:#d1e2ed;max-width:720px;font-size:16px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
-.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border:0;border-radius:9px;padding:12px 19px;background:var(--gold);color:#172a3a;font-weight:bold;cursor:pointer}
-.btn.secondary{background:transparent;color:#fff;border:1px solid #9bb9cb}.btn.blue{background:var(--blue);color:#fff}.btn:disabled{opacity:.6;cursor:wait}
-.hero-box{border:1px solid #ffffff30;background:#ffffff0d;border-radius:17px;padding:23px;box-shadow:0 15px 40px #0002}
-.hero-box h3{margin:0 0 12px;color:var(--gold)}.hero-box ul{padding:0 20px 0 0;margin:0;color:#e1edf4;font-size:14px}.hero-box li{margin:7px 0}
-.quick{max-width:1180px;margin:-24px auto 0;position:relative;z-index:2;padding:0 20px;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
-.quick div{background:#fff;border:1px solid var(--line);border-radius:12px;padding:15px;text-align:center;box-shadow:0 8px 24px #0b294010}.quick b{display:block;color:#0b4d75;font-size:14px}.quick span{font-size:11px;color:var(--muted)}
-section{padding:58px 6%;max-width:1240px;margin:auto}.section-head{max-width:790px;margin-bottom:26px}.section-head .eyebrow{color:var(--blue)}
-h2{font-size:27px;color:#0b3553;margin:4px 0 10px}.section-head p{color:var(--muted);margin:0;font-size:14px}
-.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}.surface{background:#fff;border:1px solid var(--line);border-radius:15px;padding:23px;box-shadow:0 8px 28px #102e4510}
-.surface h3{margin:0 0 10px;color:#0c4c73;font-size:18px}.surface p{margin:8px 0;color:#4d6274;font-size:14px}
-.feature-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:15px}.feature{background:#f3f8fb;border-right:3px solid var(--cyan);padding:10px 12px;border-radius:8px;font-size:13px}
-.note{background:#eaf5fa;border:1px solid #cfe5ef;border-radius:12px;padding:15px;color:#31546a;font-size:13px;margin-top:15px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.service{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;transition:.2s}
+header{
+  position:sticky;top:0;z-index:20;background:#081d2eef;
+  color:#fff;padding:12px 5%;display:flex;align-items:center;
+  justify-content:space-between;gap:20px;
+  box-shadow:0 6px 22px #0002;backdrop-filter:blur(12px)
+}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{
+  width:45px;height:45px;border:2px solid var(--gold);
+  border-radius:12px;display:grid;place-items:center;
+  color:var(--gold);font-size:25px;font-weight:bold
+}
+.brand h1{font-size:19px;margin:0;line-height:1.5}
+.brand small{display:block;color:#a9c1d2;font-size:10px}
+nav{display:flex;gap:15px;align-items:center;flex-wrap:wrap}
+nav a{text-decoration:none;color:#e5f0f7;font-size:13px}
+nav a:hover{color:var(--gold)}
+.nav-cta{
+  background:var(--gold);color:#152638!important;
+  padding:7px 13px;border-radius:8px;font-weight:bold
+}
+.toolbar{display:flex;gap:6px;align-items:center}
+.toolbtn{
+  border:1px solid #ffffff50;background:#ffffff12;color:white;
+  border-radius:8px;padding:5px 9px
+}
+.hero{
+  position:relative;overflow:hidden;
+  background:radial-gradient(circle at 15% 20%,#12618a 0,transparent 35%),
+  linear-gradient(115deg,#061522,#0b2b45 60%,#104e70);
+  color:#fff;padding:76px 6% 65px
+}
+.hero:after{
+  content:"";position:absolute;inset:0;
+  background:repeating-linear-gradient(135deg,transparent 0 34px,#ffffff08 35px 36px);
+  pointer-events:none
+}
+.hero-inner{
+  position:relative;z-index:1;max-width:1180px;margin:auto;
+  display:grid;grid-template-columns:1.5fr .8fr;gap:35px;align-items:center
+}
+.eyebrow{color:var(--gold);font-size:13px;font-weight:bold}
+.hero h2{font-size:clamp(29px,4vw,48px);line-height:1.55;margin:10px 0 15px;color:#fff}
+.hero p{color:#d1e2ed;max-width:720px;font-size:16px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  text-decoration:none;border:0;border-radius:9px;padding:12px 19px;
+  background:var(--gold);color:#172a3a;font-weight:bold
+}
+.btn.secondary{background:transparent;color:#fff;border:1px solid #9bb9cb}
+.btn.blue{background:var(--blue);color:#fff}
+.btn:disabled{opacity:.6;cursor:wait}
+.hero-box{
+  border:1px solid #ffffff30;background:#ffffff0d;
+  border-radius:17px;padding:23px;box-shadow:0 15px 40px #0002
+}
+.hero-box h3{margin:0 0 12px;color:var(--gold)}
+.hero-box ul{padding:0 20px 0 0;margin:0;color:#e1edf4;font-size:14px}
+.hero-box li{margin:7px 0}
+.quick{
+  max-width:1180px;margin:-24px auto 0;position:relative;z-index:2;
+  padding:0 20px;display:grid;grid-template-columns:repeat(4,1fr);gap:10px
+}
+.quick div{
+  background:#fff;border:1px solid var(--line);border-radius:12px;
+  padding:15px;text-align:center;box-shadow:0 8px 24px #0b294010
+}
+.quick b{display:block;color:#0b4d75;font-size:14px}
+.quick span{font-size:11px;color:var(--muted)}
+section{padding:58px 6%;max-width:1240px;margin:auto}
+.section-head,.section-heading{max-width:790px;margin-bottom:26px}
+.section-head .eyebrow,.section-heading .eyebrow{color:var(--blue)}
+h2{font-size:27px;color:#0b3553;margin:4px 0 10px}
+.section-head p,.section-heading p{color:var(--muted);margin:0;font-size:14px}
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}
+.surface,.card,.form-card{
+  background:#fff;border:1px solid var(--line);border-radius:15px;
+  padding:23px;box-shadow:0 8px 28px #102e4510
+}
+.surface h3,.card h3{margin:0 0 10px;color:#0c4c73;font-size:18px}
+.surface p,.card p{margin:8px 0;color:#4d6274;font-size:14px}
+.feature-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:15px}
+.feature{
+  background:#f3f8fb;border-right:3px solid var(--cyan);
+  padding:10px 12px;border-radius:8px;font-size:13px
+}
+.note{
+  background:#eaf5fa;border:1px solid #cfe5ef;border-radius:12px;
+  padding:15px;color:#31546a;font-size:13px;margin-top:15px
+}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.service{
+  background:#fff;border:1px solid var(--line);border-radius:14px;
+  padding:20px;transition:.2s
+}
 .service:hover{transform:translateY(-3px);box-shadow:0 12px 28px #0b294018;border-color:#a9d2e3}
-.service .ico{width:43px;height:43px;border-radius:11px;background:#e8f5fa;color:#0877a9;display:grid;place-items:center;font-size:22px;margin-bottom:10px}
-.service h3{font-size:16px;color:#0b3e60;margin:0 0 8px}.service p{font-size:13px;color:var(--muted);margin:0}.service ul{font-size:12px;color:#526a7c;padding-right:18px;margin:10px 0 0}
-.darkband{background:linear-gradient(110deg,#081b2a,#0d3d5d);color:#fff;max-width:none}.darkband .section-head h2{color:#fff}.darkband .section-head p{color:#c1d3df}
-.spec-grid{max-width:1120px;margin:auto;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.spec{border:1px solid #ffffff25;background:#ffffff0b;padding:17px;border-radius:12px}
-.spec b{display:block;color:var(--gold);font-size:14px}.spec span{display:block;color:#d4e3ec;font-size:12px;margin-top:5px}
-.process{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.step{background:#fff;border:1px solid var(--line);border-radius:13px;padding:17px}
-.step strong{display:inline-grid;place-items:center;background:#0d5279;color:#fff;border-radius:50%;width:32px;height:32px;margin-bottom:9px}
-.step h3{font-size:15px;margin:0;color:#0c4569}.step p{font-size:12px;color:var(--muted);margin:5px 0 0}
-.forms{display:grid;grid-template-columns:1fr 1fr;gap:18px}.form-card{background:#fff;border:1px solid var(--line);border-radius:15px;padding:23px;box-shadow:0 8px 28px #102e4510}
-.form-card h3{margin:0;color:#0b456a}.form-card>p{font-size:13px;color:var(--muted);margin:5px 0 15px}
-form{display:grid;gap:11px}label{font-weight:bold;font-size:12px;color:#29485f}
-input,select,textarea{display:block;width:100%;margin-top:5px;padding:11px 12px;border:1px solid #ccd9e3;border-radius:8px;background:#fbfdff;color:var(--ink);outline:none}
-input:focus,select:focus,textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px #0877b918}textarea{min-height:105px;resize:vertical}
-.status{white-space:pre-wrap;background:#edf6fa;border:1px solid #d3e8f0;padding:12px;border-radius:9px;margin-top:12px;font-size:13px}.status.error{background:#fff0f0;border-color:#efcaca;color:#922}.status.success{background:#edf9f2;border-color:#c7e8d2;color:#17613b}
-.muted{font-size:11px;color:var(--muted)}#chatPanel{margin-top:20px}#chatlog{height:260px;overflow:auto;border:1px solid var(--line);border-radius:9px;padding:10px;margin:10px 0;background:#f8fbfd}
-.msg{padding:8px 10px;border-radius:8px;margin:7px 0;background:#e7f2f8;font-size:13px;white-space:pre-wrap}.msg.owner{background:#fff0d3}.msg.assistant{background:#e6f5ec}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.contact-line{padding:12px 0;border-bottom:1px solid var(--line);font-size:14px}.contact-line:last-child{border:0}
-.contact-line b{color:#0b4d73}.contact-line a{color:#0877b9;text-decoration:none}
-.social{display:flex;gap:10px;flex-wrap:wrap;margin-top:15px}.social a{background:#edf5f9;border-radius:8px;padding:8px 13px;color:#0b5279;text-decoration:none;font-size:13px;font-weight:bold}
-.faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:13px 16px;margin:9px 0}.faq summary{cursor:pointer;color:#174966;font-weight:bold;font-size:14px}.faq p{font-size:13px;color:var(--muted);margin-bottom:0}
-.voice-panel{position:fixed;left:14px;bottom:14px;z-index:50;background:#09243a;color:#fff;padding:10px;border-radius:12px;box-shadow:0 5px 25px #0003;max-width:260px}
-.voice-panel strong{display:block;font-size:12px;margin-bottom:6px}.voice-actions{display:flex;gap:5px;flex-wrap:wrap}.voice-actions button{border:1px solid #ffffff55;background:#ffffff16;color:#fff;border-radius:7px;padding:5px 8px;font-size:11px;cursor:pointer}
-#voiceStatus{display:block;font-size:10px;color:#d5e7f2;margin-top:5px}.voice-highlight{outline:3px solid #f3b544!important;outline-offset:3px}
-footer{background:#061522;color:#c5d6e1;padding:30px 6%;font-size:12px}.footer-inner{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer-inner b{color:#fff}
-body.dark{background:#101b25;color:#e8eef3}body.dark section:not(.darkband) h2{color:#d9eaf5}body.dark .surface,body.dark .service,body.dark .step,body.dark .form-card,body.dark .quick div,body.dark .faq details{background:#172a39;color:#e8eef3;border-color:#30485a}
-body.dark .surface p,body.dark .service p,body.dark .service ul,body.dark .section-head p,body.dark .step p{color:#bdcbd5}body.dark input,body.dark select,body.dark textarea{background:#10202d;color:#fff;border-color:#40586a}
-@media(max-width:850px){.hero-inner,.about-grid,.forms,.contact-grid{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}.spec-grid{grid-template-columns:repeat(2,1fr)}.process{grid-template-columns:repeat(2,1fr)}nav{gap:10px}}
-@media(max-width:560px){.topline{font-size:10px}header{padding:10px 4%;align-items:flex-start;flex-wrap:wrap}.brand h1{font-size:16px}nav{margin-top:8px;gap:8px}nav a{font-size:11px}.hero{padding:48px 5% 50px}.hero h2{font-size:29px}.hero p{font-size:13px}.quick{grid-template-columns:repeat(2,1fr);padding:0 12px}.quick div{padding:10px}.quick b{font-size:12px}section{padding:42px 5%}.grid{grid-template-columns:1fr}.feature-list{grid-template-columns:1fr}.spec-grid{grid-template-columns:1fr 1fr}.process{grid-template-columns:1fr 1fr}.form-card,.surface{padding:17px}.voice-panel{left:8px;bottom:8px;max-width:220px}}
+.service .ico{
+  width:43px;height:43px;border-radius:11px;background:#e8f5fa;
+  color:#0877a9;display:grid;place-items:center;font-size:22px;margin-bottom:10px
+}
+.service h3{font-size:16px;color:#0b3e60;margin:0 0 8px}
+.service p{font-size:13px;color:var(--muted);margin:0}
+.service ul{font-size:12px;color:#526a7c;padding-right:18px;margin:10px 0 0}
+.darkband{
+  background:linear-gradient(110deg,#081b2a,#0d3d5d);
+  color:#fff;max-width:none
+}
+.darkband .section-head h2{color:#fff}
+.darkband .section-head p{color:#c1d3df}
+.spec-grid{
+  max-width:1120px;margin:auto;display:grid;
+  grid-template-columns:repeat(4,1fr);gap:12px
+}
+.spec{border:1px solid #ffffff25;background:#ffffff0b;padding:17px;border-radius:12px}
+.spec b{display:block;color:var(--gold);font-size:14px}
+.spec span{display:block;color:#d4e3ec;font-size:12px;margin-top:5px}
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
+.step{background:#fff;border:1px solid var(--line);border-radius:13px;padding:17px}
+.step strong,.step-number{
+  display:inline-grid;place-items:center;background:#0d5279;color:#fff;
+  border-radius:50%;width:32px;height:32px;margin-bottom:9px
+}
+.step h3{font-size:15px;margin:0;color:#0c4569}
+.step p{font-size:12px;color:var(--muted);margin:5px 0 0}
+.forms{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.form-card h3{margin:0;color:#0b456a}
+.form-card>p{font-size:13px;color:var(--muted);margin:5px 0 15px}
+form{display:grid;gap:11px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.form-group{min-width:0}
+.full-width{grid-column:1/-1}
+label{font-weight:bold;font-size:12px;color:#29485f}
+input,select,textarea{
+  display:block;width:100%;margin-top:5px;padding:11px 12px;
+  border:1px solid #ccd9e3;border-radius:8px;
+  background:#fbfdff;color:var(--ink);outline:none
+}
+input:focus,select:focus,textarea:focus{
+  border-color:var(--blue);box-shadow:0 0 0 3px #0877b918
+}
+textarea{min-height:105px;resize:vertical}
+.btn-primary{background:var(--blue);color:#fff}
+.form-status,.status{
+  white-space:pre-wrap;padding:12px;border-radius:9px;
+  margin-top:12px;font-size:13px;min-height:0
+}
+.form-status:empty{display:none}
+.form-status.info{background:#edf6fa;border:1px solid #d3e8f0;color:#31546a}
+.form-status.error{background:#fff0f0;border:1px solid #efcaca;color:#922}
+.form-status.success{background:#edf9f2;border:1px solid #c7e8d2;color:#17613b}
+.muted{font-size:11px;color:var(--muted)}
+.chat-panel{margin-top:20px}
+.chat-header h3{margin:0}
+.chat-log{
+  height:260px;overflow:auto;border:1px solid var(--line);
+  border-radius:9px;padding:10px;margin:10px 0;background:#f8fbfd
+}
+.chat-message{padding:9px 11px;border-radius:8px;margin:7px 0;background:#e7f2f8;font-size:13px}
+.chat-message.owner{background:#fff0d3}
+.chat-message.assistant{background:#e6f5ec}
+.chat-message p{margin:3px 0;white-space:pre-wrap}
+.chat-message small{font-size:10px;color:#607487}
+.chat-empty{font-size:13px;color:var(--muted)}
+.tracking-result{
+  margin-top:15px;padding:15px;background:#f3f8fb;
+  border:1px solid var(--line);border-radius:10px
+}
+.tracking-result h3{margin:0 0 8px}
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.contact-line{padding:12px 0;border-bottom:1px solid var(--line);font-size:14px}
+.contact-line b{color:#0b4d73}
+.contact-line a{color:#0877b9;text-decoration:none}
+.contact-card{text-align:center}
+.contact-card a{color:var(--blue);font-weight:bold}
+.contact-icon{font-size:28px;color:var(--blue)}
+.faq details,.faq-item{
+  background:#fff;border:1px solid var(--line);
+  border-radius:10px;padding:13px 16px;margin:9px 0
+}
+.faq summary,.faq-item summary{cursor:pointer;color:#174966;font-weight:bold;font-size:14px}
+.faq p,.faq-item p{font-size:13px;color:var(--muted);margin-bottom:0}
+.voice-panel{
+  position:fixed;left:14px;bottom:14px;z-index:50;
+  background:#09243a;color:#fff;padding:10px;border-radius:12px;
+  box-shadow:0 5px 25px #0003;max-width:280px
+}
+.voice-panel strong{display:block;font-size:12px;margin-bottom:6px}
+.voice-actions{display:flex;gap:5px;flex-wrap:wrap}
+.voice-panel button{
+  border:1px solid #ffffff55;background:#ffffff16;color:#fff;
+  border-radius:7px;padding:5px 8px;font-size:11px
+}
+#voiceStatus{display:block;font-size:10px;color:#d5e7f2;margin-top:5px}
+.voice-highlight{outline:3px solid var(--gold)!important;outline-offset:3px}
+.accessibility-tools{
+  position:fixed;right:12px;bottom:14px;z-index:45;
+  display:flex;gap:5px
+}
+.accessibility-tools button{
+  border:1px solid #cbd9e3;background:#fff;color:#12364d;
+  border-radius:8px;padding:7px 10px;box-shadow:0 3px 12px #0002
+}
+.back-to-top{
+  display:none;position:fixed;right:15px;bottom:65px;z-index:40;
+  border:0;border-radius:50%;width:42px;height:42px;
+  background:var(--blue);color:#fff;font-size:22px
+}
+footer{background:#061522;color:#c5d6e1;padding:30px 6%;font-size:12px}
+.footer-inner,.footer-content{
+  max-width:1180px;margin:auto;display:flex;
+  justify-content:space-between;gap:20px;flex-wrap:wrap
+}
+.footer-inner b,.footer-content h2,.footer-content h3{color:#fff}
+.footer-content>div{flex:1;min-width:190px}
+.footer-content a{color:#d9e8f3}
+.footer-bottom{text-align:center;border-top:1px solid #ffffff20;margin-top:20px;padding-top:12px}
+body.dark{background:#101b25;color:#e8eef3}
+body.dark section:not(.darkband) h2{color:#d9eaf5}
+body.dark .surface,body.dark .card,body.dark .service,body.dark .step,
+body.dark .form-card,body.dark .quick div,body.dark .faq details,
+body.dark .faq-item{
+  background:#172a39;color:#e8eef3;border-color:#30485a
+}
+body.dark .surface p,body.dark .card p,body.dark .service p,
+body.dark .service ul,body.dark .section-head p,body.dark .section-heading p,
+body.dark .step p{color:#bdcbd5}
+body.dark input,body.dark select,body.dark textarea{
+  background:#10202d;color:#fff;border-color:#40586a
+}
+body.dark label{color:#d6e5ee}
+body.dark .feature,body.dark .note,body.dark .tracking-result{background:#20394b;color:#dbeaf2}
+body.dark .chat-log{background:#10202d;border-color:#40586a}
+@media(max-width:900px){
+  .hero-inner,.about-grid,.forms{grid-template-columns:1fr}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .spec-grid{grid-template-columns:repeat(2,1fr)}
+  .process{grid-template-columns:repeat(2,1fr)}
+  nav{gap:10px}
+}
+@media(max-width:650px){
+  .topline{font-size:10px}
+  header{padding:10px 4%;align-items:flex-start;flex-wrap:wrap}
+  .brand h1{font-size:16px}
+  nav{margin-top:8px;gap:8px}
+  nav a{font-size:11px}
+  .hero{padding:48px 5% 50px}
+  .hero h2{font-size:29px}
+  .hero p{font-size:13px}
+  .quick{grid-template-columns:repeat(2,1fr);padding:0 12px}
+  .quick div{padding:10px}
+  .quick b{font-size:12px}
+  section{padding:42px 5%}
+  .grid,.contact-grid{grid-template-columns:1fr}
+  .feature-list,.form-grid{grid-template-columns:1fr}
+  .spec-grid,.process{grid-template-columns:1fr 1fr}
+  .form-card,.surface,.card{padding:17px}
+  .voice-panel{left:8px;bottom:8px;max-width:230px}
+  .accessibility-tools{right:8px;bottom:8px}
+}
 </style>
 </head>
+
 <body>
 <div class="topline">
-<span>خدمات فنی و مهندسی برق | ساختمان، صنعت و سیستم‌های حفاظتی</span>
-<span>تماس مستقیم: <a href="tel:09902774434">۰۹۹۰۲۷۷۴۴۳۴</a></span>
+  <span>خدمات فنی و مهندسی برق | ساختمان، صنعت و سیستم‌های حفاظتی</span>
+  <span>تماس مستقیم: <a href="tel:09902774434">۰۹۹۰۲۷۷۴۴۳۴</a></span>
 </div>
+
 <header>
-<div class="brand"><div class="logo">⚡</div><div><h1>برق سفیر شرق</h1><small>مهندسی • اجرا • عیب‌یابی • پشتیبانی</small></div></div>
-<nav>
-<a href="#about">درباره ما</a><a href="#services">خدمات تخصصی</a><a href="#technical">توانمندی فنی</a><a href="#order">ثبت سفارش</a><a href="#consult">مشاوره</a><a href="#tracking">پیگیری</a><a class="nav-cta" href="#contact">تماس با ما</a>
-</nav>
-<div class="toolbar">
-<button class="toolbtn" id="themeToggle" type="button" aria-label="تغییر پوسته">🌙</button>
-<button class="toolbtn" id="fontDown" type="button" aria-label="کوچک کردن نوشته">A−</button>
-<button class="toolbtn" id="fontUp" type="button" aria-label="بزرگ کردن نوشته">A+</button>
-</div>
+  <div class="brand">
+    <div class="logo">⚡</div>
+    <div>
+      <h1>برق سفیر شرق</h1>
+      <small>مهندسی • اجرا • عیب‌یابی • پشتیبانی</small>
+    </div>
+  </div>
+
+  <nav aria-label="منوی اصلی">
+    <a href="#about">درباره ما</a>
+    <a href="#services">خدمات تخصصی</a>
+    <a href="#technical">توانمندی فنی</a>
+    <a href="#order">ثبت سفارش</a>
+    <a href="#consult">مشاوره</a>
+    <a href="#tracking">پیگیری</a>
+    <a class="nav-cta" href="#contact">تماس با ما</a>
+  </nav>
+
+  <div class="toolbar">
+    <button class="toolbtn" id="themeToggle" type="button" aria-label="تغییر پوسته">🌙</button>
+    <button class="toolbtn" id="fontDown" type="button" aria-label="کوچک کردن نوشته">A−</button>
+    <button class="toolbtn" id="fontUp" type="button" aria-label="بزرگ کردن نوشته">A+</button>
+  </div>
 </header>
+
 <main>
-<div class="hero"><div class="hero-inner"><div>
-<div class="eyebrow">راهکارهای مهندسی برق برای پروژه‌های ساختمانی و صنعتی</div>
-<h2>از عیب‌یابی تا اجرای تخصصی؛<br>همراه مطمئن پروژه‌های برق شما</h2>
-<p>برق سفیر شرق ارائه‌دهنده خدمات فنی و مهندسی در حوزه برق ساختمان و صنعت، طراحی و اجرای تابلوهای برق، راه‌اندازی تجهیزات، سیستم‌های نظارتی و حفاظتی و مشاوره فنی است.</p>
-<div class="actions"><a class="btn" href="#order">📝 ثبت سفارش خدمات</a><a class="btn secondary" href="#consult">💬 دریافت مشاوره فنی</a><a class="btn secondary" href="tel:09902774434">☎ تماس مستقیم</a></div>
-</div><aside class="hero-box"><h3>حوزه‌های فعالیت</h3><ul><li>تأسیسات و سیم‌کشی برق ساختمان</li><li>برق صنعتی و تابلوهای توزیع و کنترل</li><li>نصب و راه‌اندازی تجهیزات و ماشین‌آلات</li><li>دوربین مداربسته و سیستم‌های حفاظتی</li><li>عیب‌یابی، اصلاح و بهینه‌سازی مدارها</li></ul></aside></div></div>
-<div class="quick"><div><b>برق ساختمان</b><span>مسکونی، تجاری و اداری</span></div><div><b>برق صنعتی</b><span>مدار قدرت و فرمان</span></div><div><b>تابلو برق</b><span>مونتاژ، نصب و راه‌اندازی</span></div><div><b>سیستم حفاظتی</b><span>نظارت و اعلام خطر</span></div></div>
-<section id="about"><div class="section-head"><div class="eyebrow">معرفی مجموعه</div><h2>درباره برق سفیر شرق</h2><p>شناخت نیاز پروژه، بررسی شرایط محل، انتخاب راهکار فنی مناسب و اجرای منظم، بخش‌های مهم یک خدمت قابل اتکا هستند.</p></div>
-<div class="about-grid"><div class="surface"><h3>رویکرد فنی و اجرایی</h3><p>برق سفیر شرق در زمینه خدمات برق ساختمان و صنعت فعالیت می‌کند؛ از اجرای زیرساخت و سیم‌کشی تا نصب تجهیزات، مونتاژ تابلو، راه‌اندازی سامانه‌های کنترلی و پیاده‌سازی سیستم‌های حفاظتی.</p><p>در پروژه‌های عیب‌یابی، ابتدا شرح نشانه‌ها و شرایط بروز مشکل دریافت می‌شود. سپس با بررسی تخصصی، محدوده ایراد و اقدامات لازم مشخص خواهد شد.</p><div class="feature-list"><div class="feature">بررسی نیاز و مشخصات پروژه</div><div class="feature">انتخاب راهکار متناسب</div><div class="feature">اجرای اصولی و منظم</div><div class="feature">تست عملکرد و تحویل کار</div></div></div>
-<div class="surface"><h3>چه پروژه‌هایی را پوشش می‌دهیم؟</h3><p>خدمات مجموعه برای طیف متنوعی از فضاها قابل بررسی است:</p><ul><li>واحدهای مسکونی و ساختمان‌های چندواحدی</li><li>فروشگاه‌ها، مراکز تجاری و اداری</li><li>کارگاه‌ها، سوله‌ها و محیط‌های صنعتی</li><li>تابلوهای برق و مدارهای کنترل تجهیزات</li><li>پروژه‌های نظارت تصویری و ایمنی</li></ul><div class="note">برای برآورد دقیق دامنه کار، نوع محل، محدوده پروژه و شرح نیاز را اعلام کنید. ارسال تصویر جایگزین بازدید فنی نیست.</div></div></div></section>
-<section id="services"><div class="section-head"><div class="eyebrow">خدمات تخصصی</div><h2>خدمات برق ساختمان و صنعت</h2><p>هر خدمت بر اساس شرایط پروژه، ظرفیت موردنیاز، نوع تجهیزات و الزامات بهره‌برداری بررسی می‌شود.</p></div>
-<div class="grid">
-<article class="service"><div class="ico">⌂</div><h3>برق‌کشی و تأسیسات ساختمان</h3><p>اجرای زیرساخت و مدارهای الکتریکی برای فضاهای مسکونی، تجاری و اداری.</p><ul><li>لوله‌گذاری و مسیرگذاری سیم و کابل</li><li>مدار روشنایی و پریزها</li><li>توزیع برق و اصلاح سیم‌کشی</li><li>بررسی عیب و قطعی مدارها</li></ul></article>
-<article class="service"><div class="ico">⚙</div><h3>برق صنعتی و مدارهای کنترل</h3><p>خدمات برق و کنترل متناسب با نیاز کارگاه‌ها و خطوط تولید.</p><ul><li>مدارهای قدرت و فرمان</li><li>راه‌اندازی و کنترل الکتروموتور</li><li>بررسی تجهیزات و اتصالات</li><li>عیب‌یابی مدارهای صنعتی</li></ul></article>
-<article class="service"><div class="ico">▤</div><h3>تابلو برق و تجهیزات حفاظتی</h3><p>مونتاژ، نصب، سیم‌بندی و راه‌اندازی تابلوهای برق ساختمانی و صنعتی.</p><ul><li>چیدمان تجهیزات و ریل‌گذاری</li><li>سیم‌بندی مدار قدرت و فرمان</li><li>نصب کلیدها و تجهیزات حفاظتی</li><li>بررسی عملکرد و تست مدار</li></ul></article>
-<article class="service"><div class="ico">▣</div><h3>دوربین مداربسته</h3><p>اجرای زیرساخت و نصب سامانه‌های نظارت تصویری.</p><ul><li>جانمایی دوربین‌ها</li><li>کابل‌کشی و نصب تجهیزات</li><li>راه‌اندازی دستگاه ضبط</li><li>تنظیم مشاهده از راه دور</li></ul></article>
-<article class="service"><div class="ico">◉</div><h3>اعلام حریق و دزدگیر</h3><p>اجرای زیرساخت و نصب تجهیزات سامانه‌های اعلام خطر و حفاظت.</p><ul><li>اجرای مسیرها و کابل‌کشی</li><li>نصب تجهیزات و حسگرها</li><li>راه‌اندازی و بررسی عملکرد</li><li>توسعه و اصلاح سامانه موجود</li></ul></article>
-<article class="service"><div class="ico">▧</div><h3>نصب و راه‌اندازی ماشین‌آلات</h3><p>خدمات نصب و راه‌اندازی الکتریکی تجهیزات و ماشین‌آلات صنعتی.</p><ul><li>بررسی نیازهای برق دستگاه</li><li>اتصال و نصب تجهیزات</li><li>بررسی مدارهای فرمان و قدرت</li><li>تست اولیه عملکرد</li></ul></article>
-<article class="service"><div class="ico">⌁</div><h3>عیب‌یابی و تعمیرات برق</h3><p>بررسی قطعی، اتصالی، عملکرد نامنظم و ایرادهای تأسیسات برق.</p><ul><li>بررسی مدار روشنایی و پریز</li><li>عیب‌یابی تابلو و تجهیزات</li><li>بررسی اتصالات و حفاظت</li><li>پیشنهاد اصلاح و رفع عیب</li></ul></article>
-<article class="service"><div class="ico">⌕</div><h3>آیفون و تجهیزات جانبی</h3><p>نصب، تعویض و تعمیر انواع آیفون صوتی و تصویری.</p><ul><li>نصب و سیم‌کشی</li><li>بررسی ایراد صدا و تصویر</li><li>تعویض قطعات معیوب</li><li>تنظیم و تحویل عملکرد</li></ul></article>
-<article class="service"><div class="ico">❄</div><h3>نصب و سرویس کولر آبی</h3><p>نصب و بررسی اتصالات الکتریکی و تجهیزات مرتبط با کولر آبی.</p><ul><li>بررسی برق‌رسانی و کلید</li><li>نصب و تعویض تجهیزات برقی</li><li>بررسی عملکرد پمپ و موتور</li><li>رفع ایرادهای الکتریکی</li></ul></article>
-</div></section>
+<div class="hero" id="home">
+  <div class="hero-inner">
+    <div>
+      <div class="eyebrow">راهکارهای مهندسی برق برای پروژه‌های ساختمانی و صنعتی</div>
+      <h2>از عیب‌یابی تا اجرای تخصصی؛<br>همراه مطمئن پروژه‌های برق شما</h2>
+      <p>برق سفیر شرق ارائه‌دهنده خدمات فنی و مهندسی در حوزه برق ساختمان و صنعت، طراحی و اجرای تابلوهای برق، راه‌اندازی تجهیزات، سیستم‌های نظارتی و حفاظتی و مشاوره فنی است.</p>
+      <div class="actions">
+        <a class="btn" href="#order">📝 ثبت سفارش خدمات</a>
+        <a class="btn secondary" href="#consult">💬 دریافت مشاوره فنی</a>
+        <a class="btn secondary" href="tel:09902774434">☎ تماس مستقیم</a>
+      </div>
+    </div>
+    <aside class="hero-box">
+      <h3>حوزه‌های فعالیت</h3>
+      <ul>
+        <li>تأسیسات و سیم‌کشی برق ساختمان</li>
+        <li>برق صنعتی و تابلوهای توزیع و کنترل</li>
+        <li>نصب و راه‌اندازی تجهیزات و ماشین‌آلات</li>
+        <li>دوربین مداربسته و سیستم‌های حفاظتی</li>
+        <li>عیب‌یابی، اصلاح و بهینه‌سازی مدارها</li>
+      </ul>
+    </aside>
+  </div>
+</div>
+
+<div class="quick">
+  <div><b>برق ساختمان</b><span>مسکونی، تجاری و اداری</span></div>
+  <div><b>برق صنعتی</b><span>مدار قدرت و فرمان</span></div>
+  <div><b>تابلو برق</b><span>مونتاژ، نصب و راه‌اندازی</span></div>
+  <div><b>سیستم حفاظتی</b><span>نظارت و اعلام خطر</span></div>
+</div>
+
+<section id="about">
+  <div class="section-head">
+    <div class="eyebrow">معرفی مجموعه</div>
+    <h2>درباره برق سفیر شرق</h2>
+    <p>شناخت نیاز پروژه، بررسی شرایط محل، انتخاب راهکار فنی مناسب و اجرای منظم، بخش‌های مهم یک خدمت قابل اتکا هستند.</p>
+  </div>
+  <div class="about-grid">
+    <div class="surface">
+      <h3>رویکرد فنی و اجرایی</h3>
+      <p>برق سفیر شرق در زمینه خدمات برق ساختمان و صنعت فعالیت می‌کند؛ از اجرای زیرساخت و سیم‌کشی تا نصب تجهیزات، مونتاژ تابلو، راه‌اندازی سامانه‌های کنترلی و پیاده‌سازی سیستم‌های حفاظتی.</p>
+      <p>در پروژه‌های عیب‌یابی، ابتدا شرح نشانه‌ها و شرایط بروز مشکل دریافت می‌شود. سپس با بررسی تخصصی، محدوده ایراد و اقدامات لازم مشخص خواهد شد.</p>
+      <div class="feature-list">
+        <div class="feature">بررسی نیاز و مشخصات پروژه</div>
+        <div class="feature">انتخاب راهکار متناسب</div>
+        <div class="feature">اجرای اصولی و منظم</div>
+        <div class="feature">تست عملکرد و تحویل کار</div>
+      </div>
+    </div>
+    <div class="surface">
+      <h3>چه پروژه‌هایی را پوشش می‌دهیم؟</h3>
+      <p>خدمات مجموعه برای طیف متنوعی از فضاها قابل بررسی است:</p>
+      <ul>
+        <li>واحدهای مسکونی و ساختمان‌های چندواحدی</li>
+        <li>فروشگاه‌ها، مراکز تجاری و اداری</li>
+        <li>کارگاه‌ها، سوله‌ها و محیط‌های صنعتی</li>
+        <li>تابلوهای برق و مدارهای کنترل تجهیزات</li>
+        <li>پروژه‌های نظارت تصویری و ایمنی</li>
+      </ul>
+      <div class="note">برای برآورد دقیق دامنه کار، نوع محل، محدوده پروژه و شرح نیاز را اعلام کنید. ارسال تصویر جایگزین بازدید فنی نیست.</div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="section-head">
+    <div class="eyebrow">خدمات تخصصی</div>
+    <h2>خدمات برق ساختمان و صنعت</h2>
+    <p>هر خدمت بر اساس شرایط پروژه، ظرفیت موردنیاز، نوع تجهیزات و الزامات بهره‌برداری بررسی می‌شود.</p>
+  </div>
+  <div class="grid">
+    <article class="service">
+      <div class="ico">⌂</div><h3>برق‌کشی و تأسیسات ساختمان</h3>
+      <p>اجرای زیرساخت و مدارهای الکتریکی برای فضاهای مسکونی، تجاری و اداری.</p>
+      <ul><li>لوله‌گذاری و مسیرگذاری سیم و کابل</li><li>مدار روشنایی و پریزها</li><li>توزیع برق و اصلاح سیم‌کشی</li><li>بررسی عیب و قطعی مدارها</li></ul>
+    </article>
+    <article class="service">
+      <div class="ico">⚙</div><h3>برق صنعتی و مدارهای کنترل</h3>
+      <p>خدمات برق و کنترل متناسب با نیاز کارگاه‌ها و خطوط تولید.</p>
+      <ul><li>مدارهای قدرت و فرمان</li><li>راه‌اندازی و کنترل الکتروموتور</li><li>بررسی تجهیزات و اتصالات</li><li>عیب‌یابی مدارهای صنعتی</li></ul>
+    </article>
+    <article class="service">
+      <div class="ico">▤</div><h3>تابلو برق و تجهیزات حفاظتی</h3>
+      <p>مونتاژ، نصب، سیم‌بندی و راه‌اندازی تابلوهای برق ساختمانی و صنعتی.</p>
+      <ul><li>چیدمان تجهیزات و ریل‌گذاری</li><li>سیم‌بندی مدار قدرت و فرمان</li><li>نصب کلیدها و تجهیزات حفاظتی</li><li>بررسی عملکرد و تست مدار</li></ul>
+    </article>
+    <article class="service">
+      <div class="ico">▣</div><h3>دوربین مداربسته</h3>
+      <p>اجرای زیرساخت و نصب سامانه‌های نظارت تصویری.</p>
+      <ul><li>جانمایی دوربین‌ها</li><li>کابل‌کشی و نصب تجهیزات</li><li>راه‌اندازی دستگاه ضبط</li><li>تنظیم مشاهده از راه دور</li></ul>
+    </article>
+    <article class="service">
+      <div class="ico">◉</div><h3>اعلام حریق و دزدگیر</h3>
+      <p>اجرای زیرساخت و نصب تجهیزات سامانه‌های اعلام خطر و حفاظت.</p>
+      <ul><li>اجرای مسیرها و کابل‌کشی</li><li>نصب تجهیزات و حسگرها</li><li>راه‌اندازی و بررسی عملکرد</li><li>توسعه و اصلاح سامانه موجود</li></ul>
+    </article>
+    <article class="service">
+      <div class="ico">▧</div><h3>نصب و راه‌اندازی ماشین‌آلات</h3>
+      <p>خدمات نصب و راه‌اندازی الکتریکی تجهیزات و ماشین‌آلات صنعتی.</p>
+      <ul><li>بررسی نیازهای برق دستگاه</li><li>اتصال و نصب تجهیزات</li><li>بررسی مدارهای فرمان و قدرت</li><li>تست اولیه عملکرد</li></ul>
+    </article>
+    <article class="service">
+      <div class="ico">⌁</div><h3>عیب‌یابی و تعمیرات برق</h3>
+      <p>بررسی قطعی، اتصالی، عملکرد نامنظم و ایرادهای تأسیسات برق.</p>
+      <ul><li>بررسی مدار روشنایی و پریز</li><li>عیب‌یابی تابلو و تجهیزات</li><li>بررسی اتصالات و حفاظت</li><li>پیشنهاد اصلاح و رفع عیب</li></ul>
+    </article>
+    <article class="service">
+      <div class="ico">⌕</div><h3>آیفون و تجهیزات جانبی</h3>
+      <p>نصب، تعویض و تعمیر انواع آیفون صوتی و تصویری.</p>
+      <ul><li>نصب و سیم‌کشی</li><li>بررسی ایراد صدا و تصویر</li><li>تعویض قطعات معیوب</li><li>تنظیم و تحویل عملکرد</li></ul>
+    </article>
+    <article class="service">
+      <div class="ico">❄</div><h3>نصب و سرویس کولر آبی</h3>
+      <p>نصب و بررسی اتصالات الکتریکی و تجهیزات مرتبط با کولر آبی.</p>
+      <ul><li>بررسی برق‌رسانی و کلید</li><li>نصب و تعویض تجهیزات برقی</li><li>بررسی عملکرد پمپ و موتور</li><li>رفع ایرادهای الکتریکی</li></ul>
+    </article>
+  </div>
+</section>
+
 <!-- توانمندی‌های فنی -->
-<section id="technical" class="section">
-  <div class="container">
-    <div class="section-heading">
-      <span class="eyebrow">توانمندی و تخصص</span>
-      <h2>توان فنی و مهندسی برق سفیر شرق</h2>
-      <p>
-        ارائه خدمات تخصصی برق با رویکرد مهندسی، رعایت اصول ایمنی،
-        انتخاب تجهیزات مناسب و اجرای استاندارد پروژه‌ها.
-      </p>
-    </div>
-
-    <div class="grid">
-      <article class="card">
-        <h3>طراحی و محاسبات برق</h3>
-        <p>بررسی نیاز پروژه، طراحی مسیرهای کابل‌کشی، انتخاب تجهیزات و محاسبات موردنیاز.</p>
-      </article>
-
-      <article class="card">
-        <h3>اجرای تأسیسات الکتریکی</h3>
-        <p>اجرای سیم‌کشی و برق‌کشی ساختمان‌های مسکونی، تجاری، اداری و صنعتی.</p>
-      </article>
-
-      <article class="card">
-        <h3>تابلوهای برق</h3>
-        <p>مونتاژ، نصب، سیم‌بندی و راه‌اندازی تابلوهای برق و کنترل متناسب با نیاز پروژه.</p>
-      </article>
-
-      <article class="card">
-        <h3>سیستم‌های حفاظتی</h3>
-        <p>اجرای سیستم‌های اعلام حریق، دزدگیر، دوربین مداربسته و تجهیزات نظارتی.</p>
-      </article>
-
-      <article class="card">
-        <h3>تعمیر و عیب‌یابی</h3>
-        <p>بررسی تخصصی ایرادات الکتریکی، تشخیص علت خرابی و ارائه راهکار مناسب.</p>
-      </article>
-
-      <article class="card">
-        <h3>تجهیزات و ماشین‌آلات صنعتی</h3>
-        <p>نصب، سیم‌کشی، راه‌اندازی و بررسی سیستم‌های الکتریکی ماشین‌آلات صنعتی.</p>
-      </article>
-    </div>
+<section id="technical" class="darkband">
+  <div class="section-head">
+    <div class="eyebrow">توانمندی و تخصص</div>
+    <h2>توان فنی و مهندسی برق سفیر شرق</h2>
+    <p>ارائه خدمات تخصصی برق با رویکرد مهندسی، رعایت اصول ایمنی، انتخاب تجهیزات مناسب و اجرای اصولی پروژه‌ها.</p>
+  </div>
+  <div class="spec-grid">
+    <div class="spec"><b>طراحی و محاسبات برق</b><span>بررسی نیاز پروژه، طراحی مسیرهای کابل‌کشی، انتخاب تجهیزات و محاسبات موردنیاز.</span></div>
+    <div class="spec"><b>اجرای تأسیسات الکتریکی</b><span>اجرای سیم‌کشی و برق‌کشی ساختمان‌های مسکونی، تجاری، اداری و صنعتی.</span></div>
+    <div class="spec"><b>تابلوهای برق</b><span>مونتاژ، نصب، سیم‌بندی و راه‌اندازی تابلوهای برق و کنترل.</span></div>
+    <div class="spec"><b>سیستم‌های حفاظتی</b><span>اجرای سیستم‌های اعلام حریق، دزدگیر، دوربین مداربسته و تجهیزات نظارتی.</span></div>
+    <div class="spec"><b>تعمیر و عیب‌یابی</b><span>بررسی تخصصی ایرادات الکتریکی و ارائه راهکار مناسب.</span></div>
+    <div class="spec"><b>ماشین‌آلات صنعتی</b><span>نصب، سیم‌کشی، راه‌اندازی و بررسی سیستم‌های الکتریکی ماشین‌آلات.</span></div>
+    <div class="spec"><b>تست و کنترل عملکرد</b><span>بررسی عملکرد مدارها و تجهیزات پیش از تحویل پروژه.</span></div>
+    <div class="spec"><b>پشتیبانی فنی</b><span>دریافت درخواست، بررسی موضوع و پیگیری مراحل خدمت.</span></div>
   </div>
 </section>
 
 <!-- مراحل انجام پروژه -->
-<section id="process" class="section section-alt">
-  <div class="container">
-    <div class="section-heading">
-      <span class="eyebrow">فرایند همکاری</span>
-      <h2>از ثبت درخواست تا تحویل پروژه</h2>
-      <p>درخواست شما مرحله‌به‌مرحله بررسی و پیگیری می‌شود.</p>
-    </div>
-
-    <div class="grid">
-      <article class="card">
-        <span class="step-number">۱</span>
-        <h3>ثبت درخواست</h3>
-        <p>اطلاعات اولیه پروژه یا مشکل خود را از طریق فرم ثبت سفارش ارسال کنید.</p>
-      </article>
-
-      <article class="card">
-        <span class="step-number">۲</span>
-        <h3>بررسی و مشاوره</h3>
-        <p>درخواست شما بررسی می‌شود و برای مشخص شدن جزئیات با شما ارتباط می‌گیریم.</p>
-      </article>
-
-      <article class="card">
-        <span class="step-number">۳</span>
-        <h3>هماهنگی و اجرا</h3>
-        <p>پس از توافق درباره جزئیات، زمان‌بندی و شرایط انجام کار هماهنگ می‌شود.</p>
-      </article>
-
-      <article class="card">
-        <span class="step-number">۴</span>
-        <h3>تحویل و پیگیری</h3>
-        <p>وضعیت درخواست و مراحل انجام کار از طریق کد پیگیری قابل بررسی خواهد بود.</p>
-      </article>
-    </div>
+<section id="process">
+  <div class="section-head">
+    <div class="eyebrow">فرایند همکاری</div>
+    <h2>از ثبت درخواست تا تحویل پروژه</h2>
+    <p>درخواست شما مرحله‌به‌مرحله بررسی و پیگیری می‌شود.</p>
+  </div>
+  <div class="process">
+    <article class="step"><strong>۱</strong><h3>ثبت درخواست</h3><p>مشخصات و توضیحات پروژه یا مشکل خود را از طریق فرم ثبت سفارش ارسال کنید.</p></article>
+    <article class="step"><strong>۲</strong><h3>بررسی و مشاوره</h3><p>درخواست شما بررسی می‌شود و برای مشخص شدن جزئیات با شما ارتباط می‌گیریم.</p></article>
+    <article class="step"><strong>۳</strong><h3>هماهنگی و اجرا</h3><p>پس از توافق درباره جزئیات، زمان‌بندی و شرایط انجام کار هماهنگ می‌شود.</p></article>
+    <article class="step"><strong>۴</strong><h3>تحویل و پیگیری</h3><p>وضعیت درخواست و پیام‌های مربوط به پرونده با کد پیگیری قابل بررسی خواهد بود.</p></article>
   </div>
 </section>
 
 <!-- ثبت سفارش -->
-<section id="order" class="section">
-  <div class="container">
-    <div class="section-heading">
-      <span class="eyebrow">ثبت سفارش خدمات</span>
-      <h2>درخواست اجرای پروژه یا دریافت خدمات</h2>
-      <p>
-        اطلاعات خود و شرح خدمات موردنیاز را وارد کنید تا درخواست شما بررسی شود.
-      </p>
-    </div>
+<section id="order">
+  <div class="section-head">
+    <div class="eyebrow">ثبت سفارش خدمات</div>
+    <h2>درخواست اجرای پروژه یا دریافت خدمات</h2>
+    <p>اطلاعات خود و شرح خدمات موردنیاز را وارد کنید تا درخواست شما برای بررسی ارسال شود.</p>
+  </div>
 
-    <div class="form-card">
-      <form id="orderForm">
-        <div class="form-grid">
-          <div class="form-group">
-            <label for="orderName">نام و نام خانوادگی *</label>
-            <input
-              id="orderName"
-              name="name"
-              type="text"
-              placeholder="نام خود را وارد کنید"
-              autocomplete="name"
-              required
-            >
-          </div>
-
-          <div class="form-group">
-            <label for="orderPhone">شماره تماس *</label>
-            <input
-              id="orderPhone"
-              name="phone"
-              type="tel"
-              inputmode="tel"
-              placeholder="مثلاً 09123456789"
-              autocomplete="tel"
-              required
-            >
-          </div>
-
-          <div class="form-group">
-            <label for="orderService">نوع خدمات *</label>
-            <select id="orderService" name="service" required>
-              <option value="">انتخاب نوع خدمات</option>
-              <option value="برق‌کشی ساختمان">برق‌کشی ساختمان</option>
-              <option value="برق صنعتی">برق صنعتی</option>
-              <option value="نصب و مونتاژ تابلو برق">نصب و مونتاژ تابلو برق</option>
-              <option value="نصب دوربین مداربسته">نصب دوربین مداربسته</option>
-              <option value="اعلام حریق">سیستم اعلام حریق</option>
-              <option value="دزدگیر">سیستم دزدگیر</option>
-              <option value="نصب آیفون">نصب آیفون</option>
-              <option value="تعمیر آیفون">تعمیر آیفون</option>
-              <option value="نصب کولر آبی">نصب کولر آبی</option>
-              <option value="تعمیرات و عیب‌یابی برق">تعمیرات و عیب‌یابی برق</option>
-              <option value="نصب و راه‌اندازی ماشین‌آلات">نصب و راه‌اندازی ماشین‌آلات</option>
-              <option value="سایر خدمات">سایر خدمات</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="orderLocation">شهر و محل پروژه</label>
-            <input
-              id="orderLocation"
-              name="location"
-              type="text"
-              placeholder="شهر، منطقه یا آدرس تقریبی"
-            >
-          </div>
-
-          <div class="form-group full-width">
-            <label for="orderDescription">شرح درخواست *</label>
-            <textarea
-              id="orderDescription"
-              name="description"
-              rows="5"
-              placeholder="لطفاً نیاز خود، نوع پروژه و جزئیات موردنظر را توضیح دهید..."
-              required
-            ></textarea>
-          </div>
-
-          <div class="form-group full-width">
-            <label for="orderTime">زمان مناسب برای تماس</label>
-            <select id="orderTime" name="preferredTime">
-              <option value="">فرقی ندارد</option>
-              <option value="صبح">صبح</option>
-              <option value="ظهر">ظهر</option>
-              <option value="عصر">عصر</option>
-              <option value="شب">شب</option>
-            </select>
-          </div>
+  <div class="form-card">
+    <form id="orderForm">
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="orderName">نام و نام خانوادگی *</label>
+          <input id="orderName" name="name" type="text" placeholder="نام خود را وارد کنید" autocomplete="name" required>
         </div>
-
-        <button type="submit" class="btn btn-primary" id="orderSubmit">
-          ثبت درخواست سفارش
-        </button>
-
-        <div
-          id="orderStatus"
-          class="form-status"
-          role="status"
-          aria-live="polite"
-        ></div>
-      </form>
-    </div>
+        <div class="form-group">
+          <label for="orderPhone">شماره تماس *</label>
+          <input id="orderPhone" name="phone" type="tel" inputmode="tel" placeholder="مثلاً 09123456789" autocomplete="tel" required>
+        </div>
+        <div class="form-group">
+          <label for="orderService">نوع خدمات *</label>
+          <select id="orderService" name="service" required>
+            <option value="">انتخاب نوع خدمات</option>
+            <option value="برق‌کشی ساختمان">برق‌کشی ساختمان</option>
+            <option value="برق صنعتی">برق صنعتی</option>
+            <option value="نصب و مونتاژ تابلو برق">نصب و مونتاژ تابلو برق</option>
+            <option value="نصب دوربین مداربسته">نصب دوربین مداربسته</option>
+            <option value="اعلام حریق">سیستم اعلام حریق</option>
+            <option value="دزدگیر">سیستم دزدگیر</option>
+            <option value="نصب آیفون">نصب آیفون</option>
+            <option value="تعمیر آیفون">تعمیر آیفون</option>
+            <option value="نصب کولر آبی">نصب کولر آبی</option>
+            <option value="تعمیرات و عیب‌یابی برق">تعمیرات و عیب‌یابی برق</option>
+            <option value="نصب و راه‌اندازی ماشین‌آلات">نصب و راه‌اندازی ماشین‌آلات</option>
+            <option value="سایر خدمات">سایر خدمات</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="orderLocation">شهر و محل پروژه</label>
+          <input id="orderLocation" name="location" type="text" placeholder="شهر، منطقه یا آدرس تقریبی">
+        </div>
+        <div class="form-group full-width">
+          <label for="orderDescription">شرح درخواست *</label>
+          <textarea id="orderDescription" name="description" rows="5" placeholder="نیاز خود، نوع پروژه و جزئیات موردنظر را توضیح دهید..." required></textarea>
+        </div>
+        <div class="form-group full-width">
+          <label for="orderTime">زمان مناسب برای تماس</label>
+          <select id="orderTime" name="preferredTime">
+            <option value="">فرقی ندارد</option>
+            <option value="صبح">صبح</option>
+            <option value="ظهر">ظهر</option>
+            <option value="عصر">عصر</option>
+            <option value="شب">شب</option>
+          </select>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary" id="orderSubmit">ثبت درخواست سفارش</button>
+      <div id="orderStatus" class="form-status" role="status" aria-live="polite"></div>
+    </form>
   </div>
 </section>
 
 <!-- مشاوره تخصصی -->
-<section id="consult" class="section section-alt">
-  <div class="container">
-    <div class="section-heading">
-      <span class="eyebrow">مشاوره تخصصی</span>
-      <h2>مشکل یا سؤال فنی خود را مطرح کنید</h2>
-      <p>
-        موضوع را توضیح دهید تا درخواست مشاوره شما ثبت و برای بررسی ارسال شود.
-      </p>
-    </div>
+<section id="consult">
+  <div class="section-head">
+    <div class="eyebrow">مشاوره تخصصی</div>
+    <h2>مشکل یا سؤال فنی خود را مطرح کنید</h2>
+    <p>موضوع را توضیح دهید تا درخواست مشاوره شما ثبت و برای بررسی ارسال شود.</p>
+  </div>
 
-    <div class="form-card">
-      <form id="consultForm">
-        <div class="form-grid">
-          <div class="form-group">
-            <label for="consultName">نام و نام خانوادگی *</label>
-            <input
-              id="consultName"
-              name="name"
-              type="text"
-              placeholder="نام شما"
-              autocomplete="name"
-              required
-            >
-          </div>
-
-          <div class="form-group">
-            <label for="consultPhone">شماره تماس *</label>
-            <input
-              id="consultPhone"
-              name="phone"
-              type="tel"
-              inputmode="tel"
-              placeholder="شماره تماس"
-              autocomplete="tel"
-              required
-            >
-          </div>
-
-          <div class="form-group">
-            <label for="consultSubject">موضوع مشاوره *</label>
-            <select id="consultSubject" name="subject" required>
-              <option value="">انتخاب موضوع</option>
-              <option value="برق ساختمان">برق ساختمان</option>
-              <option value="برق صنعتی">برق صنعتی</option>
-              <option value="تابلو برق">تابلو برق</option>
-              <option value="سیستم حفاظتی">سیستم حفاظتی</option>
-              <option value="اعلام حریق">اعلام حریق</option>
-              <option value="دوربین مداربسته">دوربین مداربسته</option>
-              <option value="عیب‌یابی و تعمیرات">عیب‌یابی و تعمیرات</option>
-              <option value="سایر موارد">سایر موارد</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="consultLevel">میزان آشنایی فنی شما</label>
-            <select id="consultLevel" name="technicalLevel">
-              <option value="مبتدی">آشنایی کم؛ توضیح ساده می‌خواهم</option>
-              <option value="متوسط">آشنایی متوسط</option>
-              <option value="حرفه‌ای">آشنایی فنی و حرفه‌ای</option>
-            </select>
-          </div>
-
-          <div class="form-group full-width">
-            <label for="consultMessage">شرح سؤال یا مشکل *</label>
-            <textarea
-              id="consultMessage"
-              name="message"
-              rows="6"
-              placeholder="مشکل یا سؤال خود را با جزئیات توضیح دهید..."
-              required
-            ></textarea>
-          </div>
-        </div>
-
-        <button type="submit" class="btn btn-primary" id="consultSubmit">
-          ارسال درخواست مشاوره
-        </button>
-
-        <div
-          id="consultStatus"
-          class="form-status"
-          role="status"
-          aria-live="polite"
-        ></div>
-      </form>
-    </div>
-
-    <!-- پنل گفت‌وگوی مشاوره -->
-    <div id="chatPanel" class="form-card chat-panel" hidden>
-      <div class="chat-header">
-        <h3>گفت‌وگو درباره درخواست مشاوره</h3>
-        <p>پاسخ‌ها و پیام‌های مربوط به درخواست شما در این بخش نمایش داده می‌شوند.</p>
-      </div>
-
-      <div
-        id="chatlog"
-        class="chat-log"
-        role="log"
-        aria-live="polite"
-        aria-relevant="additions"
-      >
-        <p class="chat-empty">هنوز پیامی برای نمایش وجود ندارد.</p>
-      </div>
-
-      <form id="chatReplyForm">
+  <div class="form-card">
+    <form id="consultForm">
+      <div class="form-grid">
         <div class="form-group">
-          <label for="chatReply">پیام شما</label>
-          <textarea
-            id="chatReply"
-            name="message"
-            rows="3"
-            placeholder="پیام خود را بنویسید..."
-            required
-          ></textarea>
+          <label for="consultName">نام و نام خانوادگی *</label>
+          <input id="consultName" name="name" type="text" placeholder="نام شما" autocomplete="name" required>
         </div>
+        <div class="form-group">
+          <label for="consultPhone">شماره تماس *</label>
+          <input id="consultPhone" name="phone" type="tel" inputmode="tel" placeholder="شماره تماس" autocomplete="tel" required>
+        </div>
+        <div class="form-group">
+          <label for="consultSubject">موضوع مشاوره *</label>
+          <!-- نکته: Worker فیلد service را اجباری می‌داند -->
+          <select id="consultSubject" name="service" required>
+            <option value="">انتخاب موضوع</option>
+            <option value="برق ساختمان">برق ساختمان</option>
+            <option value="برق صنعتی">برق صنعتی</option>
+            <option value="تابلو برق">تابلو برق</option>
+            <option value="سیستم حفاظتی">سیستم حفاظتی</option>
+            <option value="اعلام حریق">اعلام حریق</option>
+            <option value="دوربین مداربسته">دوربین مداربسته</option>
+            <option value="عیب‌یابی و تعمیرات">عیب‌یابی و تعمیرات</option>
+            <option value="سایر موارد">سایر موارد</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="consultLevel">میزان آشنایی فنی شما</label>
+          <select id="consultLevel" name="technicalLevel">
+            <option value="مبتدی">آشنایی کم؛ توضیح ساده می‌خواهم</option>
+            <option value="متوسط">آشنایی متوسط</option>
+            <option value="حرفه‌ای">آشنایی فنی و حرفه‌ای</option>
+          </select>
+        </div>
+        <div class="form-group full-width">
+          <label for="consultMessage">شرح سؤال یا مشکل *</label>
+          <textarea id="consultMessage" name="message" rows="6" placeholder="مشکل یا سؤال خود را با جزئیات توضیح دهید..." required></textarea>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary" id="consultSubmit">ارسال درخواست مشاوره</button>
+      <div id="consultStatus" class="form-status" role="status" aria-live="polite"></div>
+    </form>
+  </div>
 
-        <button type="submit" class="btn btn-primary" id="chatReplySubmit">
-          ارسال پیام
-        </button>
-
-        <div
-          id="chatReplyStatus"
-          class="form-status"
-          role="status"
-          aria-live="polite"
-        ></div>
-      </form>
+  <div id="chatPanel" class="form-card chat-panel" hidden>
+    <div class="chat-header">
+      <h3>گفت‌وگو درباره درخواست مشاوره</h3>
+      <p>پاسخ‌ها و پیام‌های مربوط به درخواست شما در این بخش نمایش داده می‌شوند.</p>
     </div>
+    <div id="chatlog" class="chat-log" role="log" aria-live="polite" aria-relevant="additions">
+      <p class="chat-empty">هنوز پیامی برای نمایش وجود ندارد.</p>
+    </div>
+    <form id="chatReplyForm">
+      <div class="form-group">
+        <label for="chatReply">پیام شما</label>
+        <textarea id="chatReply" name="message" rows="3" placeholder="پیام خود را بنویسید..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" id="chatReplySubmit">ارسال پیام</button>
+      <div id="chatReplyStatus" class="form-status" role="status" aria-live="polite"></div>
+    </form>
   </div>
 </section>
 
 <!-- پیگیری درخواست -->
-<section id="tracking" class="section">
-  <div class="container">
-    <div class="section-heading">
-      <span class="eyebrow">پیگیری درخواست</span>
-      <h2>وضعیت سفارش یا مشاوره خود را پیگیری کنید</h2>
-      <p>
-        کد پیگیری یا شناسه‌ای را که هنگام ثبت درخواست دریافت کرده‌اید وارد کنید.
-      </p>
-    </div>
+<section id="tracking">
+  <div class="section-head">
+    <div class="eyebrow">پیگیری درخواست</div>
+    <h2>وضعیت سفارش یا مشاوره خود را پیگیری کنید</h2>
+    <p>کد پیگیری‌ای را که هنگام ثبت درخواست دریافت کرده‌اید وارد کنید.</p>
+  </div>
 
-    <div class="form-card">
-      <form id="trackingForm">
-        <div class="form-group">
-          <label for="trackingCode">کد پیگیری *</label>
-          <input
-            id="trackingCode"
-            name="trackingCode"
-            type="text"
-            placeholder="کد پیگیری خود را وارد کنید"
-            autocomplete="off"
-            required
-          >
-        </div>
-
-        <div class="form-group">
-          <label for="trackingPhone">شماره تماس ثبت‌شده</label>
-          <input
-            id="trackingPhone"
-            name="phone"
-            type="tel"
-            inputmode="tel"
-            placeholder="شماره تماسی که با آن درخواست ثبت کرده‌اید"
-          >
-        </div>
-
-        <button type="submit" class="btn btn-primary" id="trackingSubmit">
-          بررسی وضعیت درخواست
-        </button>
-
-        <div
-          id="trackingStatus"
-          class="form-status"
-          role="status"
-          aria-live="polite"
-        ></div>
-
-        <div id="trackingResult" class="tracking-result" hidden>
-          <h3>نتیجه پیگیری</h3>
-          <div id="trackingResultContent"></div>
-        </div>
-      </form>
-    </div>
+  <div class="form-card">
+    <form id="trackingForm">
+      <div class="form-group">
+        <label for="trackingCode">کد پیگیری *</label>
+        <input id="trackingCode" name="trackingCode" type="text" placeholder="کد پیگیری خود را وارد کنید" autocomplete="off" required>
+      </div>
+      <div class="form-group">
+        <label for="trackingPhone">شماره تماس ثبت‌شده (اختیاری)</label>
+        <input id="trackingPhone" name="phone" type="tel" inputmode="tel" placeholder="شماره تماسی که با آن درخواست ثبت کرده‌اید">
+        <small class="muted">در نسخه فعلی، کد پیگیری برای دریافت پیام‌ها استفاده می‌شود؛ شماره تلفن هنوز در Worker برای احراز هویت بررسی نمی‌شود.</small>
+      </div>
+      <button type="submit" class="btn btn-primary" id="trackingSubmit">بررسی وضعیت درخواست</button>
+      <div id="trackingStatus" class="form-status" role="status" aria-live="polite"></div>
+      <div id="trackingResult" class="tracking-result" hidden>
+        <h3>نتیجه پیگیری</h3>
+        <div id="trackingResultContent"></div>
+      </div>
+    </form>
   </div>
 </section>
+
 <!-- پرسش‌های متداول -->
-<section id="faq" class="section section-alt">
-  <div class="container">
-    <div class="section-heading">
-      <span class="eyebrow">راهنمای مشتریان</span>
-      <h2>پرسش‌های متداول</h2>
-      <p>پاسخ برخی از سؤال‌های رایج درباره خدمات برق سفیر شرق</p>
-    </div>
-
-    <div class="faq-list">
-      <details class="faq-item">
-        <summary>چطور می‌توانم سفارش خدمات ثبت کنم؟</summary>
-        <p>از بخش ثبت سفارش، مشخصات و توضیحات پروژه را وارد کنید. پس از ارسال، درخواست شما برای بررسی ثبت می‌شود.</p>
-      </details>
-
-      <details class="faq-item">
-        <summary>آیا قبل از اجرای پروژه امکان مشاوره وجود دارد؟</summary>
-        <p>بله. می‌توانید از بخش مشاوره تخصصی، سؤال یا مشکل خود را مطرح کنید تا درخواستتان بررسی شود.</p>
-      </details>
-
-      <details class="faq-item">
-        <summary>چطور از وضعیت سفارش خود مطلع شوم؟</summary>
-        <p>با استفاده از کد پیگیری دریافتی، از بخش پیگیری درخواست وضعیت پرونده خود را بررسی کنید.</p>
-      </details>
-
-      <details class="faq-item">
-        <summary>آیا خدمات برق صنعتی هم انجام می‌دهید؟</summary>
-        <p>بله. خدمات برق صنعتی، مونتاژ و نصب تابلو برق، سیم‌کشی و راه‌اندازی تجهیزات و ماشین‌آلات صنعتی ارائه می‌شود.</p>
-      </details>
-
-      <details class="faq-item">
-        <summary>آیا امکان ثبت درخواست برای پروژه‌های بزرگ وجود دارد؟</summary>
-        <p>بله. درخواست پروژه‌های مسکونی، تجاری، اداری و صنعتی قابل ثبت و بررسی است.</p>
-      </details>
-
-      <details class="faq-item">
-        <summary>آیا ثبت درخواست به معنی قطعی شدن سفارش است؟</summary>
-        <p>خیر. ثبت درخواست به معنی دریافت اطلاعات اولیه است. جزئیات، هزینه و زمان اجرا پس از بررسی و هماهنگی مشخص می‌شود.</p>
-      </details>
-    </div>
+<section id="faq">
+  <div class="section-head">
+    <div class="eyebrow">راهنمای مشتریان</div>
+    <h2>پرسش‌های متداول</h2>
+    <p>پاسخ برخی از سؤال‌های رایج درباره خدمات برق سفیر شرق</p>
+  </div>
+  <div class="faq">
+    <details class="faq-item">
+      <summary>چطور می‌توانم سفارش خدمات ثبت کنم؟</summary>
+      <p>از بخش ثبت سفارش، مشخصات و توضیحات پروژه را وارد کنید. پس از ارسال، درخواست شما برای بررسی ثبت می‌شود.</p>
+    </details>
+    <details class="faq-item">
+      <summary>آیا قبل از اجرای پروژه امکان مشاوره وجود دارد؟</summary>
+      <p>بله. می‌توانید از بخش مشاوره تخصصی، سؤال یا مشکل خود را مطرح کنید تا درخواستتان بررسی شود.</p>
+    </details>
+    <details class="faq-item">
+      <summary>چطور از وضعیت سفارش خود مطلع شوم؟</summary>
+      <p>با استفاده از کد پیگیری دریافتی، از بخش پیگیری درخواست پیام‌ها و وضعیت ثبت‌شده پرونده را بررسی کنید.</p>
+    </details>
+    <details class="faq-item">
+      <summary>آیا خدمات برق صنعتی هم انجام می‌دهید؟</summary>
+      <p>بله. خدمات برق صنعتی، مونتاژ و نصب تابلو برق، سیم‌کشی و راه‌اندازی تجهیزات و ماشین‌آلات صنعتی ارائه می‌شود.</p>
+    </details>
+    <details class="faq-item">
+      <summary>آیا امکان ثبت درخواست برای پروژه‌های بزرگ وجود دارد؟</summary>
+      <p>بله. درخواست پروژه‌های مسکونی، تجاری، اداری و صنعتی قابل ثبت و بررسی است.</p>
+    </details>
+    <details class="faq-item">
+      <summary>آیا ثبت درخواست به معنی قطعی شدن سفارش است؟</summary>
+      <p>خیر. ثبت درخواست به معنی دریافت اطلاعات اولیه است. جزئیات، هزینه و زمان اجرا پس از بررسی و هماهنگی مشخص می‌شود.</p>
+    </details>
   </div>
 </section>
 
 <!-- تماس با ما -->
-<section id="contact" class="section">
-  <div class="container">
-    <div class="section-heading">
-      <span class="eyebrow">ارتباط با ما</span>
-      <h2>با برق سفیر شرق در ارتباط باشید</h2>
-      <p>برای دریافت اطلاعات بیشتر یا هماهنگی خدمات با ما تماس بگیرید.</p>
-    </div>
-
-    <div class="grid contact-grid">
-      <article class="card contact-card">
-        <div class="contact-icon">☎</div>
-        <h3>تماس مستقیم</h3>
-        <p>آقای انوش زارعان</p>
-        <a href="tel:09902774434" dir="ltr">09902774434</a>
-      </article>
-
-      <article class="card contact-card">
-        <div class="contact-icon">◎</div>
-        <h3>اینستاگرام</h3>
-        <p>صفحه رسمی برق سفیر شرق</p>
-        <a
-          href="https://www.instagram.com/barghe_safir_shargh/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >مشاهده صفحه اینستاگرام</a>
-      </article>
-
-      <article class="card contact-card">
-        <div class="contact-icon">✉</div>
-        <h3>ثبت درخواست آنلاین</h3>
-        <p>درخواست خود را در هر ساعت از شبانه‌روز ثبت کنید.</p>
-        <a href="#order">رفتن به فرم سفارش</a>
-      </article>
-    </div>
+<section id="contact">
+  <div class="section-head">
+    <div class="eyebrow">ارتباط با ما</div>
+    <h2>با برق سفیر شرق در ارتباط باشید</h2>
+    <p>برای دریافت اطلاعات بیشتر یا هماهنگی خدمات با ما تماس بگیرید.</p>
+  </div>
+  <div class="grid contact-grid">
+    <article class="card contact-card">
+      <div class="contact-icon">☎</div>
+      <h3>تماس مستقیم</h3>
+      <p>آقای انوش زارعان</p>
+      <a href="tel:09902774434" dir="ltr">09902774434</a>
+    </article>
+    <article class="card contact-card">
+      <div class="contact-icon">◎</div>
+      <h3>اینستاگرام</h3>
+      <p>صفحه رسمی برق سفیر شرق</p>
+      <a href="https://www.instagram.com/barghe_safir_shargh/" target="_blank" rel="noopener noreferrer">مشاهده صفحه اینستاگرام</a>
+    </article>
+    <article class="card contact-card">
+      <div class="contact-icon">✉</div>
+      <h3>ثبت درخواست آنلاین</h3>
+      <p>درخواست خود را در هر ساعت از شبانه‌روز ثبت کنید.</p>
+      <a href="#order">رفتن به فرم سفارش</a>
+    </article>
   </div>
 </section>
 
 <!-- پنل راهنمای صوتی -->
-<div class="voice-panel" id="voicePanel">
-  <button type="button" id="readPageBtn" class="voice-btn">
-    🔊 خواندن صفحه
-  </button>
-  <button type="button" id="pauseVoiceBtn" class="voice-btn">
-    ⏸ مکث
-  </button>
-  <button type="button" id="resumeVoiceBtn" class="voice-btn">
-    ▶ ادامه
-  </button>
-  <button type="button" id="stopVoiceBtn" class="voice-btn">
-    ⏹ توقف
-  </button>
+<div class="voice-panel" id="voicePanel" aria-label="راهنمای صوتی سایت">
+  <strong>راهنمای صوتی برق سفیر شرق</strong>
+  <div class="voice-actions">
+    <button type="button" id="startVoiceBtn">🔊 شروع راهنما</button>
+    <button type="button" id="readPageBtn">خواندن این بخش</button>
+    <button type="button" id="pauseVoiceBtn">⏸ مکث</button>
+    <button type="button" id="resumeVoiceBtn">▶ ادامه</button>
+    <button type="button" id="stopVoiceBtn">⏹ توقف</button>
+  </div>
+  <span id="voiceStatus" role="status" aria-live="polite">برای شنیدن راهنما، شروع را انتخاب کنید.</span>
 </div>
 
-<!-- تنظیمات نمایش -->
+<!-- ابزارهای دسترسی‌پذیری -->
 <div class="accessibility-tools" aria-label="تنظیمات نمایش">
   <button type="button" id="increaseFontBtn" aria-label="افزایش اندازه نوشته">A+</button>
-  <button type="button" id="decreaseFontBtn" aria-label="کاهش اندازه نوشته">A-</button>
+  <button type="button" id="decreaseFontBtn" aria-label="کاهش اندازه نوشته">A−</button>
   <button type="button" id="themeToggleBtn" aria-label="تغییر حالت نمایش">🌙</button>
 </div>
 
-<!-- دکمه بازگشت به بالا -->
-<button
-  type="button"
-  id="backToTop"
-  class="back-to-top"
-  aria-label="بازگشت به بالای صفحه"
->
-  ↑
-</button>
-
+<button type="button" id="backToTop" class="back-to-top" aria-label="بازگشت به بالای صفحه">↑</button>
 </main>
 
-<!-- پاورقی -->
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-content">
-      <div>
-        <h2>برق سفیر شرق</h2>
-        <p>
-          خدمات فنی و مهندسی برق، اجرای پروژه‌های ساختمانی و صنعتی،
-          نصب تجهیزات و سیستم‌های حفاظتی.
-        </p>
-      </div>
-
-      <div>
-        <h3>دسترسی سریع</h3>
-        <ul>
-          <li><a href="#about">درباره ما</a></li>
-          <li><a href="#services">خدمات</a></li>
-          <li><a href="#order">ثبت سفارش</a></li>
-          <li><a href="#consult">مشاوره تخصصی</a></li>
-          <li><a href="#tracking">پیگیری درخواست</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h3>راه‌های ارتباطی</h3>
-        <p>آقای انوش زارعان</p>
-        <a href="tel:09902774434" dir="ltr">09902774434</a>
-        <p>
-          <a
-            href="https://www.instagram.com/barghe_safir_shargh/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >اینستاگرام برق سفیر شرق</a>
-        </p>
-      </div>
+<footer>
+  <div class="footer-content">
+    <div>
+      <h2>برق سفیر شرق</h2>
+      <p>خدمات فنی و مهندسی برق، اجرای پروژه‌های ساختمانی و صنعتی، نصب تجهیزات و سیستم‌های حفاظتی.</p>
     </div>
-
-    <div class="footer-bottom">
-      <p>تمامی حقوق این وب‌سایت متعلق به برق سفیر شرق است.</p>
+    <div>
+      <h3>دسترسی سریع</h3>
+      <ul>
+        <li><a href="#about">درباره ما</a></li>
+        <li><a href="#services">خدمات</a></li>
+        <li><a href="#order">ثبت سفارش</a></li>
+        <li><a href="#consult">مشاوره تخصصی</a></li>
+        <li><a href="#tracking">پیگیری درخواست</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>راه‌های ارتباطی</h3>
+      <p>آقای انوش زارعان</p>
+      <a href="tel:09902774434" dir="ltr">09902774434</a>
+      <p><a href="https://www.instagram.com/barghe_safir_shargh/" target="_blank" rel="noopener noreferrer">اینستاگرام برق سفیر شرق</a></p>
     </div>
   </div>
+  <div class="footer-bottom">
+    <p>تمامی حقوق این وب‌سایت متعلق به برق سفیر شرق است.</p>
+  </div>
 </footer>
+
 <script>
 "use strict";
 
-/* تنظیمات اصلی */
+/* تنظیمات اصلی ارتباط با Worker */
 const API_BASE = "https://bargh-safir-orders.bargh-safire-shargh.workers.dev";
-
 const $ = (id) => document.getElementById(id);
 
 async function apiRequest(path, options = {}) {
-  const response = await fetch(API_BASE + path, {
-    ...options,
-    headers: {
-      "Content-Type": "application/json",
-      ...(options.headers || {})
-    }
-  });
+  let response;
 
-  const text = await response.text();
+  try {
+    response = await fetch(API_BASE + path, {
+      ...options,
+      headers: {
+        ...(options.body ? {"Content-Type":"application/json"} : {}),
+        ...(options.headers || {})
+      }
+    });
+  } catch (error) {
+    throw new Error("ارتباط با سرور برقرار نشد. اتصال اینترنت را بررسی کنید.");
+  }
+
+  const raw = await response.text();
   let data;
 
   try {
-    data = JSON.parse(text);
+    data = raw ? JSON.parse(raw) : {};
   } catch {
     throw new Error("پاسخ سرور قابل خواندن نیست.");
   }
 
   if (!response.ok || data.ok === false) {
-    throw new Error(data.error || data.message || "درخواست ناموفق بود.");
+    throw new Error(data.error || data.message || ("خطای سرور: " + response.status));
   }
 
   return data;
@@ -678,16 +800,18 @@ async function apiRequest(path, options = {}) {
 function showStatus(id, message, type = "info") {
   const element = $(id);
   if (!element) return;
-
   element.textContent = message;
   element.className = "form-status " + type;
+  announce(message);
 }
 
 function setLoading(button, loading, loadingText = "در حال ارسال...") {
   if (!button) return;
 
   if (loading) {
-    button.dataset.originalText = button.textContent;
+    if (!button.dataset.originalText) {
+      button.dataset.originalText = button.textContent;
+    }
     button.textContent = loadingText;
     button.disabled = true;
   } else {
@@ -704,10 +828,11 @@ function normalizePhone(phone) {
   return String(phone || "").replace(/[^\d+]/g, "");
 }
 
-/* اطلاعات پرونده جاری */
+/* وضعیت پرونده جاری */
 let currentCaseToken = "";
 let currentCaseId = "";
 let pollingTimer = null;
+let lastMessageSignature = "";
 
 /* ثبت سفارش */
 $("orderForm")?.addEventListener("submit", async (event) => {
@@ -715,46 +840,46 @@ $("orderForm")?.addEventListener("submit", async (event) => {
 
   const form = event.currentTarget;
   const button = $("orderSubmit");
-
-  if (!form.reportValidity()) return;
+  if (!form.reportValidity()) {
+    announce("لطفاً فیلدهای ضروری فرم سفارش را کامل کنید.");
+    return;
+  }
 
   const values = formObject(form);
   values.phone = normalizePhone(values.phone);
 
-  if (values.phone.length < 10) {
+  if (values.phone.replace(/\D/g, "").length < 10) {
     showStatus("orderStatus", "شماره تماس واردشده معتبر نیست.", "error");
     return;
   }
 
   setLoading(button, true);
-  showStatus("orderStatus", "در حال ارسال درخواست شما...", "info");
+  showStatus("orderStatus", "درخواست شما در حال ارسال به سامانه برق سفیر شرق است.", "info");
 
   try {
     const result = await apiRequest("/api/cases", {
       method: "POST",
       body: JSON.stringify({
-        ...values,
-        kind: "order",
-        type: "order"
+        name: values.name,
+        phone: values.phone,
+        service: values.service,
+        description: values.description,
+        kind: "order"
       })
     });
 
-    const token = result.token || result.trackingToken || result.trackingCode || "";
-    const caseId = result.caseId || result.id || "";
+    currentCaseToken = result.token || "";
+    currentCaseId = result.caseId || "";
 
-    currentCaseToken = token;
-    currentCaseId = caseId;
+    const identifier = currentCaseToken;
+    let message = result.answer || "درخواست شما با موفقیت در سامانه ثبت شد.";
 
-    let message = result.message || "درخواست شما با موفقیت ثبت شد.";
-
-    if (token) {
-      message += "\nکد پیگیری: " + token;
-      $("trackingCode").value = token;
-    } else if (caseId) {
-      message += "\nشناسه درخواست: " + caseId;
-      $("trackingCode").value = caseId;
+    if (identifier) {
+      message += "\n\nکد پیگیری شما:\n" + identifier;
+      $("trackingCode").value = identifier;
+      announce("درخواست سفارش شما با موفقیت ثبت شد. کد پیگیری در صفحه نمایش داده شده است.");
     } else {
-      message += "\nبرای دریافت کد پیگیری با پشتیبانی تماس بگیرید.";
+      message += "\nکد پیگیری از سرور دریافت نشد. لطفاً با پشتیبانی تماس بگیرید.";
     }
 
     showStatus("orderStatus", message, "success");
@@ -774,57 +899,52 @@ $("consultForm")?.addEventListener("submit", async (event) => {
   const form = event.currentTarget;
   const button = $("consultSubmit");
 
-  if (!form.reportValidity()) return;
+  if (!form.reportValidity()) {
+    announce("لطفاً فیلدهای ضروری فرم مشاوره را کامل کنید.");
+    return;
+  }
 
   const values = formObject(form);
   values.phone = normalizePhone(values.phone);
 
-  if (values.phone.length < 10) {
+  if (values.phone.replace(/\D/g, "").length < 10) {
     showStatus("consultStatus", "شماره تماس واردشده معتبر نیست.", "error");
     return;
   }
 
   setLoading(button, true);
-  showStatus("consultStatus", "در حال ثبت درخواست مشاوره...", "info");
+  showStatus("consultStatus", "درخواست مشاوره شما در حال ثبت است.", "info");
 
   try {
     const result = await apiRequest("/api/cases", {
       method: "POST",
       body: JSON.stringify({
-        ...values,
-        kind: "consultation",
-        type: "consultation",
-        description: values.message
+        name: values.name,
+        phone: values.phone,
+        service: values.service,
+        description: values.message,
+        kind: "consultation"
       })
     });
 
-    currentCaseToken = result.token || result.trackingToken || "";
-    currentCaseId = result.caseId || result.id || "";
+    currentCaseToken = result.token || "";
+    currentCaseId = result.caseId || "";
+    const answer = result.answer || "درخواست مشاوره شما ثبت شد. پاسخ هوشمند در حال حاضر دریافت نشد.";
 
-    const identifier = currentCaseToken || currentCaseId;
-
-    let message = result.message || "درخواست مشاوره شما ثبت شد.";
-
-    if (identifier) {
-      message += "\nکد پیگیری: " + identifier;
-      $("trackingCode").value = identifier;
+    let message = answer;
+    if (currentCaseToken) {
+      message += "\n\nکد پیگیری شما:\n" + currentCaseToken;
+      $("trackingCode").value = currentCaseToken;
     }
 
     showStatus("consultStatus", message, "success");
 
-    if (identifier) {
+    if (currentCaseToken) {
       $("chatPanel").hidden = false;
-      $("chatlog").innerHTML =
-        '<p class="chat-empty">درخواست شما ثبت شد. در انتظار پاسخ هستیم.</p>';
-
-      startPolling(identifier);
-      $("chatPanel").scrollIntoView({ behavior: "smooth", block: "start" });
-    } else {
-      showStatus(
-        "consultStatus",
-        message + "\nشناسه پرونده از پاسخ سرور دریافت نشد.",
-        "info"
-      );
+      $("chatlog").textContent = "درخواست شما ثبت شد. پیام‌ها و پاسخ‌ها در این بخش نمایش داده می‌شوند.";
+      lastMessageSignature = "";
+      startPolling(currentCaseToken);
+      $("chatPanel").scrollIntoView({behavior:"smooth",block:"start"});
     }
 
     form.reset();
@@ -835,16 +955,21 @@ $("consultForm")?.addEventListener("submit", async (event) => {
     setLoading(button, false);
   }
 });
+</script>
 
+<script>
 /* نمایش پیام‌های گفت‌وگو */
 function renderMessages(messages) {
   const chatlog = $("chatlog");
   if (!chatlog || !Array.isArray(messages)) return;
 
-  chatlog.innerHTML = "";
+  chatlog.replaceChildren();
 
   if (messages.length === 0) {
-    chatlog.textContent = "هنوز پیامی ثبت نشده است.";
+    const empty = document.createElement("p");
+    empty.className = "chat-empty";
+    empty.textContent = "هنوز پیامی برای نمایش وجود ندارد.";
+    chatlog.appendChild(empty);
     return;
   }
 
@@ -853,20 +978,27 @@ function renderMessages(messages) {
     wrapper.className = "chat-message";
 
     const sender = document.createElement("strong");
-    sender.textContent =
-      item.sender === "owner" || item.sender === "admin"
-        ? "پشتیبانی برق سفیر شرق"
-        : "شما";
+    const senderType = String(item.sender || "").toLowerCase();
+
+    if (senderType === "owner" || senderType === "admin") {
+      sender.textContent = "پشتیبانی برق سفیر شرق";
+      wrapper.classList.add("owner");
+    } else if (senderType === "assistant") {
+      sender.textContent = "مشاور هوشمند برق سفیر شرق";
+      wrapper.classList.add("assistant");
+    } else {
+      sender.textContent = "شما";
+    }
 
     const content = document.createElement("p");
-    content.textContent = item.message || item.text || "";
+    content.textContent = item.body || item.message || item.text || "";
 
     wrapper.appendChild(sender);
     wrapper.appendChild(content);
 
-    if (item.createdAt || item.created_at) {
+    const rawDate = item.created_at || item.createdAt;
+    if (rawDate) {
       const date = document.createElement("small");
-      const rawDate = item.createdAt || item.created_at;
       const parsed = new Date(rawDate);
 
       date.textContent = isNaN(parsed.getTime())
@@ -882,23 +1014,47 @@ function renderMessages(messages) {
   chatlog.scrollTop = chatlog.scrollHeight;
 }
 
-/* دریافت پیام‌های پرونده */
-async function loadMessages(identifier) {
+/* دریافت پیام‌های پرونده از مسیر واقعی Worker */
+async function loadMessages(identifier, announceNew = false) {
   const result = await apiRequest(
     "/api/case/" + encodeURIComponent(identifier) + "/messages",
-    { method: "GET" }
+    {method:"GET"}
   );
 
-  renderMessages(result.messages || result.data || []);
-}
+  const messages = result.messages || [];
+  const signature = JSON.stringify(messages);
 
-/* شروع بررسی دوره‌ای پیام‌ها */
-function startPolling(identifier) {
-  if (pollingTimer) {
-    clearInterval(pollingTimer);
+  if (announceNew && lastMessageSignature && signature !== lastMessageSignature) {
+    const previousCount = JSON.parse(lastMessageSignature).length;
+    const newMessages = messages.slice(previousCount);
+
+    newMessages.forEach((item) => {
+      const sender = String(item.sender || "").toLowerCase();
+      if (sender === "owner" || sender === "admin" || sender === "assistant") {
+        const body = item.body || item.message || item.text || "";
+        if (body) announce("پیام جدید از " +
+          (sender === "assistant" ? "مشاور هوشمند" : "پشتیبانی برق سفیر شرق") +
+          " دریافت شد. " + body);
+      }
+    });
   }
 
+  lastMessageSignature = signature;
+  renderMessages(messages);
+
+  return {
+    caseId: result.caseId || "",
+    status: result.status || "در حال بررسی",
+    messages
+  };
+}
+
+/* شروع دریافت دوره‌ای پیام‌ها */
+function startPolling(identifier) {
+  if (pollingTimer) clearInterval(pollingTimer);
+
   currentCaseToken = identifier;
+  lastMessageSignature = "";
 
   loadMessages(identifier).catch((error) => {
     showStatus("chatReplyStatus", "دریافت پیام‌ها ناموفق بود: " + error.message, "error");
@@ -906,7 +1062,7 @@ function startPolling(identifier) {
 
   pollingTimer = setInterval(() => {
     if (!document.hidden && currentCaseToken) {
-      loadMessages(currentCaseToken).catch(() => {});
+      loadMessages(currentCaseToken, true).catch(() => {});
     }
   }, 10000);
 }
@@ -915,11 +1071,13 @@ function startPolling(identifier) {
 $("chatReplyForm")?.addEventListener("submit", async (event) => {
   event.preventDefault();
 
-  const form = event.currentTarget;
   const button = $("chatReplySubmit");
   const message = $("chatReply").value.trim();
 
-  if (!message) return;
+  if (!message) {
+    announce("ابتدا متن پیام خود را وارد کنید.");
+    return;
+  }
 
   if (!currentCaseToken) {
     showStatus("chatReplyStatus", "شناسه پرونده مشخص نیست؛ ابتدا درخواست مشاوره ثبت کنید.", "error");
@@ -932,13 +1090,13 @@ $("chatReplyForm")?.addEventListener("submit", async (event) => {
     await apiRequest(
       "/api/case/" + encodeURIComponent(currentCaseToken) + "/messages",
       {
-        method: "POST",
-        body: JSON.stringify({ message })
+        method:"POST",
+        body:JSON.stringify({message})
       }
     );
 
     $("chatReply").value = "";
-    showStatus("chatReplyStatus", "پیام ارسال شد.", "success");
+    showStatus("chatReplyStatus", "پیام شما با موفقیت ارسال شد.", "success");
 
     await loadMessages(currentCaseToken);
 
@@ -949,47 +1107,34 @@ $("chatReplyForm")?.addEventListener("submit", async (event) => {
   }
 });
 
-/* پیگیری سفارش یا مشاوره */
+/* پیگیری با مسیر پشتیبانی‌شده Worker */
 $("trackingForm")?.addEventListener("submit", async (event) => {
   event.preventDefault();
 
-  const form = event.currentTarget;
   const button = $("trackingSubmit");
-  const values = formObject(form);
-  const identifier = (values.trackingCode || "").trim();
+  const identifier = $("trackingCode").value.trim();
 
   if (!identifier) {
-    showStatus("trackingStatus", "کد پیگیری را وارد کنید.", "error");
+    showStatus("trackingStatus", "لطفاً کد پیگیری را وارد کنید.", "error");
     return;
   }
 
   setLoading(button, true, "در حال بررسی...");
-  showStatus("trackingStatus", "در حال دریافت وضعیت درخواست...", "info");
+  showStatus("trackingStatus", "در حال دریافت اطلاعات پرونده از سرور...", "info");
   $("trackingResult").hidden = true;
 
   try {
-    let result;
+    const result = await loadMessages(identifier);
 
-    try {
-      result = await apiRequest(
-        "/api/case/" + encodeURIComponent(identifier),
-        { method: "GET" }
-      );
-    } catch (firstError) {
-      result = await apiRequest(
-        "/api/cases/" + encodeURIComponent(identifier),
-        { method: "GET" }
-      );
-    }
+    currentCaseToken = identifier;
 
     const container = $("trackingResultContent");
-    container.innerHTML = "";
+    container.replaceChildren();
 
     const fields = [
-      ["شناسه درخواست", result.caseId || result.id || identifier],
-      ["نوع درخواست", result.kind || result.type || "—"],
-      ["وضعیت", result.status || result.state || "در حال بررسی"],
-      ["توضیحات", result.message || result.description || "—"]
+      ["شناسه پرونده", result.caseId || "در دسترس نیست"],
+      ["وضعیت پرونده", result.status || "در حال بررسی"],
+      ["تعداد پیام‌ها", String(result.messages.length)]
     ];
 
     fields.forEach(([label, value]) => {
@@ -997,26 +1142,46 @@ $("trackingForm")?.addEventListener("submit", async (event) => {
       const strong = document.createElement("strong");
       strong.textContent = label + ": ";
       row.appendChild(strong);
-      row.appendChild(document.createTextNode(String(value)));
+      row.appendChild(document.createTextNode(value));
       container.appendChild(row);
     });
 
-    $("trackingResult").hidden = false;
-    showStatus("trackingStatus", "اطلاعات درخواست دریافت شد.", "success");
+    const latest = result.messages[result.messages.length - 1];
 
-    if (
-      result.kind === "consultation" ||
-      result.type === "consultation"
-    ) {
-      currentCaseToken = identifier;
-      $("chatPanel").hidden = false;
-      startPolling(identifier);
+    if (latest) {
+      const latestBox = document.createElement("div");
+      const heading = document.createElement("strong");
+      heading.textContent = "آخرین پیام پرونده:";
+      const paragraph = document.createElement("p");
+      paragraph.textContent = latest.body || latest.message || latest.text || "متن پیام موجود نیست.";
+      latestBox.append(heading, paragraph);
+      container.appendChild(latestBox);
+    } else {
+      const noMessage = document.createElement("p");
+      noMessage.textContent = "هنوز پیامی برای این پرونده ثبت نشده است.";
+      container.appendChild(noMessage);
     }
+
+    $("trackingResult").hidden = false;
+    showStatus("trackingStatus", "اطلاعات پرونده با موفقیت دریافت شد.", "success");
+
+    $("chatPanel").hidden = false;
+    $("chatPanel").scrollIntoView({behavior:"smooth",block:"start"});
+
+    if (pollingTimer) clearInterval(pollingTimer);
+    lastMessageSignature = JSON.stringify(result.messages);
+
+    pollingTimer = setInterval(() => {
+      if (!document.hidden && currentCaseToken) {
+        loadMessages(currentCaseToken, true).catch(() => {});
+      }
+    }, 10000);
 
   } catch (error) {
     showStatus(
       "trackingStatus",
-      "پیگیری انجام نشد: " + error.message,
+      "پیگیری انجام نشد: " + error.message +
+      "\nلطفاً کد پیگیری ۴۸ رقمی دریافتی هنگام ثبت درخواست را بررسی کنید.",
       "error"
     );
   } finally {
@@ -1024,18 +1189,22 @@ $("trackingForm")?.addEventListener("submit", async (event) => {
   }
 });
 
-/* حالت تاریک و روشن */
-const themeButton = $("themeToggleBtn");
-
+/* تنظیم حالت تاریک و روشن */
 function applyTheme(theme) {
-  document.documentElement.dataset.theme = theme;
+  const selected = theme === "dark" ? "dark" : "light";
 
-  if (themeButton) {
-    themeButton.textContent = theme === "dark" ? "☀️" : "🌙";
-  }
+  document.body.classList.toggle("dark", selected === "dark");
+  document.documentElement.dataset.theme = selected;
+
+  const icon = selected === "dark" ? "☀️" : "🌙";
+
+  ["themeToggle","themeToggleBtn"].forEach((id) => {
+    const button = $(id);
+    if (button) button.textContent = icon;
+  });
 
   try {
-    localStorage.setItem("bss-theme", theme);
+    localStorage.setItem("bss-theme", selected);
   } catch (_) {}
 }
 
@@ -1047,10 +1216,14 @@ try {
 
 applyTheme(savedTheme);
 
-themeButton?.addEventListener("click", () => {
-  const current = document.documentElement.dataset.theme || "light";
-  applyTheme(current === "dark" ? "light" : "dark");
-});
+function toggleTheme() {
+  const dark = document.body.classList.contains("dark");
+  applyTheme(dark ? "light" : "dark");
+  announce(dark ? "حالت روشن فعال شد." : "حالت تاریک فعال شد.");
+}
+
+$("themeToggle")?.addEventListener("click", toggleTheme);
+$("themeToggleBtn")?.addEventListener("click", toggleTheme);
 
 /* تنظیم اندازه نوشته‌ها */
 let fontScale = 100;
@@ -1059,47 +1232,242 @@ function applyFontScale() {
   document.documentElement.style.fontSize = fontScale + "%";
 }
 
-$("increaseFontBtn")?.addEventListener("click", () => {
-  fontScale = Math.min(fontScale + 10, 140);
+function increaseFont() {
+  fontScale = Math.min(fontScale + 10, 150);
   applyFontScale();
-});
+  announce("اندازه نوشته‌ها افزایش یافت.");
+}
 
-$("decreaseFontBtn")?.addEventListener("click", () => {
+function decreaseFont() {
   fontScale = Math.max(fontScale - 10, 80);
   applyFontScale();
-});
+  announce("اندازه نوشته‌ها کاهش یافت.");
+}
 
-/* راهنمای صوتی */
-function speakPage() {
+$("increaseFontBtn")?.addEventListener("click", increaseFont);
+$("decreaseFontBtn")?.addEventListener("click", decreaseFont);
+$("fontUp")?.addEventListener("click", increaseFont);
+$("fontDown")?.addEventListener("click", decreaseFont);
+
+/* سخنگوی فارسی */
+let availablePersianVoice = null;
+let voiceEnabled = false;
+let speechQueue = [];
+let speakingNow = false;
+
+function findPersianVoice() {
+  if (!("speechSynthesis" in window)) return null;
+
+  const voices = speechSynthesis.getVoices() || [];
+  const persian = voices.filter((voice) =>
+    String(voice.lang || "").toLowerCase().startsWith("fa")
+  );
+
+  if (!persian.length) return null;
+
+  /* نام صداها در سیستم‌های مختلف متفاوت است.
+     جنسیت صدا از API مرورگر به‌طور قابل اعتماد قابل تشخیص نیست. */
+  const preferred = persian.find((voice) =>
+    /male|mard|مرد/i.test(voice.name)
+  );
+
+  return preferred || persian[0];
+}
+
+function refreshPersianVoice() {
+  availablePersianVoice = findPersianVoice();
+
+  if (availablePersianVoice) {
+    $("voiceStatus").textContent =
+      "صدای فارسی آماده است: " + availablePersianVoice.name;
+  } else {
+    $("voiceStatus").textContent =
+      "صدای فارسی روی این دستگاه پیدا نشد. باید صدای فارسی به سیستم اضافه شود.";
+  }
+}
+
+if ("speechSynthesis" in window) {
+  refreshPersianVoice();
+  speechSynthesis.onvoiceschanged = refreshPersianVoice;
+}
+
+function setVoiceStatus(message) {
+  const element = $("voiceStatus");
+  if (element) element.textContent = message;
+}
+
+function speakText(text, options = {}) {
   if (!("speechSynthesis" in window)) {
-    alert("مرورگر شما از راهنمای صوتی پشتیبانی نمی‌کند.");
+    setVoiceStatus("مرورگر شما از پخش گفتار پشتیبانی نمی‌کند.");
     return;
   }
 
-  speechSynthesis.cancel();
+  if (!voiceEnabled && !options.force) return;
 
-  const main = document.querySelector("main");
-  const text = main ? main.innerText : document.body.innerText;
+  const cleanText = String(text || "").replace(/\s+/g, " ").trim();
+  if (!cleanText) return;
 
+  refreshPersianVoice();
+
+  if (!availablePersianVoice) {
+    setVoiceStatus("صدای فارسی موجود نیست؛ صدای انگلیسی جایگزین نمی‌شود.");
+    return;
+  }
+
+  speechQueue.push(cleanText);
+  processSpeechQueue();
+}
+
+function processSpeechQueue() {
+  if (speakingNow || !speechQueue.length || !voiceEnabled) return;
+
+  refreshPersianVoice();
+
+  if (!availablePersianVoice) {
+    speechQueue = [];
+    return;
+  }
+
+  const text = speechQueue.shift();
   const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = "fa-IR";
-  utterance.rate = 0.9;
+
+  utterance.voice = availablePersianVoice;
+  utterance.lang = availablePersianVoice.lang || "fa-IR";
+  utterance.rate = 0.92;
+  utterance.pitch = 0.95;
+  utterance.volume = 1;
+
+  speakingNow = true;
+  setVoiceStatus("راهنمای صوتی در حال صحبت است.");
+
+  utterance.onend = () => {
+    speakingNow = false;
+    if (speechQueue.length) {
+      processSpeechQueue();
+    } else {
+      setVoiceStatus("راهنمای صوتی آماده است.");
+    }
+  };
+
+  utterance.onerror = () => {
+    speakingNow = false;
+    setVoiceStatus("پخش صدا با مشکل مواجه شد.");
+    processSpeechQueue();
+  };
 
   speechSynthesis.speak(utterance);
 }
 
-$("readPageBtn")?.addEventListener("click", speakPage);
+function announce(text) {
+  if (!voiceEnabled) return;
+  speakText(text);
+}
+
+function startVoiceGuide() {
+  if (!("speechSynthesis" in window)) {
+    setVoiceStatus("مرورگر شما از راهنمای صوتی پشتیبانی نمی‌کند.");
+    return;
+  }
+
+  refreshPersianVoice();
+
+  if (!availablePersianVoice) {
+    setVoiceStatus("صدای فارسی در دستگاه پیدا نشد. لطفاً صدای فارسی را در تنظیمات سیستم نصب کنید.");
+    return;
+  }
+
+  voiceEnabled = true;
+  speechQueue = [];
+  speechSynthesis.cancel();
+  speakingNow = false;
+
+  speakText(
+    "به وب‌سایت برق سفیر شرق خوش آمدید. " +
+    "ما خدمات فنی و مهندسی برق ساختمان و صنعت، اجرای تابلو برق، " +
+    "نصب دوربین مداربسته، سیستم‌های اعلام حریق و دزدگیر، " +
+    "عیب‌یابی و تعمیرات برق و راه‌اندازی تجهیزات صنعتی ارائه می‌کنیم. " +
+    "می‌توانید از منوی سایت خدمات را مشاهده کنید، سفارش ثبت کنید، " +
+    "مشاوره بگیرید یا درخواست خود را پیگیری کنید. " +
+    "در طول استفاده از سایت، راهنمای صوتی انتخاب‌ها و نتیجه عملیات را اعلام می‌کند."
+  );
+
+  setVoiceStatus("راهنمای صوتی فعال شد.");
+}
+
+function readCurrentPage() {
+  if (!voiceEnabled) {
+    startVoiceGuide();
+    return;
+  }
+
+  const activeSection = document.querySelector("main");
+  if (!activeSection) return;
+
+  const text = activeSection.innerText
+    .replace(/\s+/g, " ")
+    .slice(0, 5000);
+
+  speechQueue = [];
+  speechSynthesis.cancel();
+  speakingNow = false;
+  speakText(text);
+}
+
+$("startVoiceBtn")?.addEventListener("click", startVoiceGuide);
+$("readPageBtn")?.addEventListener("click", readCurrentPage);
 
 $("pauseVoiceBtn")?.addEventListener("click", () => {
-  if ("speechSynthesis" in window) speechSynthesis.pause();
+  if ("speechSynthesis" in window) {
+    speechSynthesis.pause();
+    setVoiceStatus("راهنمای صوتی متوقف شده است.");
+  }
 });
 
 $("resumeVoiceBtn")?.addEventListener("click", () => {
-  if ("speechSynthesis" in window) speechSynthesis.resume();
+  if ("speechSynthesis" in window) {
+    speechSynthesis.resume();
+    setVoiceStatus("ادامه راهنمای صوتی.");
+  }
 });
 
 $("stopVoiceBtn")?.addEventListener("click", () => {
   if ("speechSynthesis" in window) speechSynthesis.cancel();
+  speechQueue = [];
+  speakingNow = false;
+  voiceEnabled = false;
+  setVoiceStatus("راهنمای صوتی خاموش شد.");
+});
+
+/* اعلام انتخاب گزینه‌ها و ورود به فیلدها */
+document.querySelectorAll("select").forEach((element) => {
+  element.addEventListener("change", () => {
+    if (element.value) {
+      const label = document.querySelector('label[for="' + element.id + '"]');
+      const labelText = label ? label.textContent : "گزینه";
+      announce(labelText + ": " + element.options[element.selectedIndex].text);
+    }
+  });
+});
+
+document.querySelectorAll("input,textarea").forEach((element) => {
+  element.addEventListener("focus", () => {
+    const label = document.querySelector('label[for="' + element.id + '"]');
+    if (label) announce("لطفاً " + label.textContent.replace("*","") + " را وارد کنید.");
+  });
+});
+
+/* اعلام مقصد لینک‌های داخلی */
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
+  link.addEventListener("click", (event) => {
+    const targetId = link.getAttribute("href").slice(1);
+    const target = $(targetId);
+
+    if (target) {
+      event.preventDefault();
+      target.scrollIntoView({behavior:"smooth",block:"start"});
+      announce("بخش " + link.textContent.trim() + " انتخاب شد.");
+    }
+  });
 });
 
 /* بازگشت به بالای صفحه */
@@ -1112,23 +1480,11 @@ window.addEventListener("scroll", () => {
 });
 
 backToTop?.addEventListener("click", () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  window.scrollTo({top:0,behavior:"smooth"});
+  announce("به ابتدای صفحه برگشتید.");
 });
 
-/* پیمایش نرم لینک‌های داخلی */
-document.querySelectorAll('a[href^="#"]').forEach((link) => {
-  link.addEventListener("click", (event) => {
-    const targetId = link.getAttribute("href").slice(1);
-    const target = $(targetId);
-
-    if (target) {
-      event.preventDefault();
-      target.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  });
-});
-
-/* کنترل خطاهای عمومی */
+/* مدیریت خطاهای عمومی */
 window.addEventListener("unhandledrejection", (event) => {
   console.error("خطای اجرای درخواست:", event.reason);
 });
